@@ -1,0 +1,77 @@
+/* Base Styles ----------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tenor Sans", sans-serif;
+}
+
+/* Pseudo-classes ----------*/
+
+/* Main Styles ----------*/
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Katibeh", cursive;
+  font-size: 4em;
+  margin: 2% 2%;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+/* Element Styles ----------*/
+
+.logo {
+  width: 10%;
+}
+
+.flower {
+  width: 12%;
+  /* margin: 1% 8%; */
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.flower:hover {
+  transform: rotate(180deg);
+}
+
+.name {
+  height: 75vh;
+  width: auto;
+}
+
+/* Layout Styles ----------*/
+
+.logo-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 2% 0 1%;
+  height: 18vh;
+}
+
+.main-wrapper {
+  display: flex;
+  height: 80vh;
+  justify-content: space-between;
+}
+
+.left-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 22%;
+  padding-top: 2%;
+}
+
+.right-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 78%;
+}
+
+/* Media Queries -------------------*/

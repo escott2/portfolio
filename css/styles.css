@@ -1,39 +1,127 @@
-/* Base Styles ----------*/
+/* ==============================
+TABLE OF CONTENTS 
+
+1. Global Styles
+
+2. Typography
+
+3. Layout
+
+  3.1 Header
+
+  3.2 Navigation
+
+  3.3 Main
+
+  3.4 Footer
+
+  3.5 Page Elements
+
+4. Components
+
+  4.1 Buttons
+
+5. Media Queries
+
+================================= */
+
+
+/* ================================= 
+  || 1. Global Styles
+==================================== */
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Tenor Sans", sans-serif;
+  font-family: "Helvetica", sans-serif;
 }
 
-/* Pseudo-classes ----------*/
 
-/* Main Styles ----------*/
-header {
-  text-align: center;
-}
 
+
+/* ================================= 
+  || 2. Typography
+==================================== */
 h1 {
-  font-family: "Katibeh", cursive;
-  font-size: 4em;
-  margin: 2% 2%;
+
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 13vw;
+  letter-spacing: 5px;
 }
 
-h3 {
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+
+  font-size: 4vw;
+  letter-spacing: 3px;
   padding: 0;
   margin: 0;
 }
 
-/* Element Styles ----------*/
+/* a {} */
+
+
+/* ================================= 
+  || 3. Layout
+==================================== */
+
+/* ---- 3.1 Header ---- */
+
+header {
+  text-align: center;
+}
+
+.name-wrapper {
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.flower-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6%;
+}
+
+/* ---- 3.2 Navigation ---- */
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* ---- 3.3 Main ---- */
+
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* ---- 3.4 Footer ---- */
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 18vh;
+}
+
+/* ---- 3.5 Page Elements ---- */
 
 .logo {
-  width: 10%;
+  width: 8%;
+  margin-left: 7%;
 }
 
 .flower {
   width: 12%;
-  /* margin: 1% 8%; */
+  margin: 0 5%;
   transition: width 2s, height 2s, transform 2s;
 }
 
@@ -42,36 +130,113 @@ h3 {
 }
 
 .name {
-  height: 75vh;
-  width: auto;
+  color: black;
+  letter-spacing: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-/* Layout Styles ----------*/
+/* ================================= 
+  || 4. Components
+==================================== */
 
-.logo-wrapper {
-  display: flex;
-  justify-content: space-around;
-  padding: 2% 0 1%;
-  height: 18vh;
+/* ---- 4.1 Buttons ---- */
+
+.nav-button {
+  background-color: #2d565b;
+  border: .2em solid black;
+  border-radius: 50px;
+  text-align: center;
+  color: white;
+  padding: 1em 1em;
+  margin: 4% 1%;
+  width: 72%;
+  cursor: pointer;
 }
 
-.main-wrapper {
-  display: flex;
-  height: 80vh;
-  justify-content: space-between;
+
+.nav-button:hover {
+  background-color: black;
 }
 
-.left-wrapper {
-  display: flex;
-  justify-content: center;
-  width: 22%;
-  padding-top: 2%;
+
+/* ================================= 
+  || 5. Media Queries
+==================================== */
+
+@media (min-width: 600px) {
+
+  h1 {
+    font-size: 6vw;
+  }
+
+  h2 {
+    font-size: 2.5vw;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4%;
+  }
+
+  .name-wrapper {
+    margin: 0;
+
+  }
+
+  .flower-wrapper {
+    justify-content: flex-end;
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .nav-wrapper {
+    flex-direction: row;
+  }
+
+  .nav-button {
+    padding: .7em .5em;
+    width: 50%;
+    border: none;
+    border-radius: 0;
+    margin: 4% 0;
+  }
+
+  .top-bottom--border {
+    border-top: .22em solid black;
+    border-bottom: .22em solid black;
+  }
+
 }
 
-.right-wrapper {
-  display: flex;
-  justify-content: center;
-  width: 78%;
+@media (min-width: 796px) {
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 2vw;
+  }
+
+
+
 }
 
-/* Media Queries -------------------*/
+@media (min-width: 1025px) {
+
+  h2 {
+    font-size: 1.5vw;
+  }
+
+  header {
+    margin-top: 3%;
+  }
+
+  .nav-button {
+    margin: 3% 0;
+  }
+
+}

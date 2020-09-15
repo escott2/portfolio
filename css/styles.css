@@ -45,13 +45,10 @@ body {
 }
 
 
-
-
 /* ================================= 
   || 2. Typography
 ==================================== */
 h1 {
-
   font-family: 'Playfair Display', serif;
   font-weight: 600;
   font-size: 13vw;
@@ -59,15 +56,13 @@ h1 {
 }
 
 h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 600;
-
-  /* font-size: 4vw; */
-  font-size: 20px;
-  letter-spacing: 3px;
-  padding: 0;
-  margin: 0;
+  /* font-size: 8vw; */
+  font-size: 30px;
+  letter-spacing: 2px;
 }
+
 
 /* a {} */
 
@@ -95,6 +90,12 @@ header {
 
 /* ---- 3.2 Navigation ---- */
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
 .nav-wrapper {
   display: flex;
   flex-direction: column;
@@ -104,11 +105,17 @@ header {
 
 /* ---- 3.3 Main ---- */
 
-.main-wrapper {
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
+main h2 {
+  text-align: center;
 }
+
+section {
+  width: 80%;
+  max-width: 850px;
+  margin: 0 auto;
+
+}
+
 
 /* ---- 3.4 Footer ---- */
 
@@ -140,6 +147,12 @@ footer {
 
 /* ---- 4.1 Buttons ---- */
 
+button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .nav-button {
   background-color: #2d565b;
   border: .2em solid black;
@@ -168,8 +181,8 @@ footer {
     font-size: 6vw;
   }
 
-  h2 {
-    font-size: 16px;
+  button {
+    font-size: 18px;
   }
 
   header {
@@ -200,11 +213,12 @@ footer {
 
   .nav-wrapper {
     flex-direction: row;
+    justify-content: center;
   }
 
   .nav-button {
     padding: .7em .5em;
-    width: 50%;
+    width: 24%;
     border: none;
     border-radius: 0;
     margin: 4% 0;

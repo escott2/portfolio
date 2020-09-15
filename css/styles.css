@@ -30,7 +30,13 @@ TABLE OF CONTENTS
   || 1. Global Styles
 ==================================== */
 
-* {
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
   box-sizing: border-box;
 }
 
@@ -56,7 +62,8 @@ h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 
-  font-size: 4vw;
+  /* font-size: 4vw; */
+  font-size: 20px;
   letter-spacing: 3px;
   padding: 0;
   margin: 0;
@@ -114,19 +121,9 @@ footer {
 
 /* ---- 3.5 Page Elements ---- */
 
-.logo {
-  width: 8%;
-  margin-left: 7%;
-}
-
 .flower {
   width: 12%;
   margin: 0 5%;
-  transition: width 2s, height 2s, transform 2s;
-}
-
-.flower:hover {
-  transform: rotate(180deg);
 }
 
 .name {
@@ -171,7 +168,7 @@ footer {
   }
 
   h2 {
-    font-size: 2.5vw;
+    font-size: 16px;
   }
 
   header {
@@ -190,6 +187,14 @@ footer {
     justify-content: flex-end;
     width: 50%;
     margin-bottom: 0;
+  }
+
+  .flower {
+    transition: width 2s, height 2s, transform 2s;
+  }
+
+  .flower:hover {
+    transform: rotate(180deg);
   }
 
   .nav-wrapper {
@@ -217,19 +222,9 @@ footer {
     font-size: 5vw;
   }
 
-  h2 {
-    font-size: 2vw;
-  }
-
-
-
 }
 
 @media (min-width: 1025px) {
-
-  h2 {
-    font-size: 1.5vw;
-  }
 
   header {
     margin-top: 3%;

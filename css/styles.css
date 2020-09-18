@@ -25,7 +25,6 @@ TABLE OF CONTENTS
 
 ================================= */
 
-
 /* ================================= 
   || 1. Global Styles
 ==================================== */
@@ -44,28 +43,34 @@ body {
   font-family: "Helvetica", sans-serif;
 }
 
-
 /* ================================= 
   || 2. Typography
 ==================================== */
-h1 {
-  font-family: 'Playfair Display', serif;
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
   font-weight: 600;
+  color: black;
+}
+
+h1 {
   font-size: 13vw;
   letter-spacing: 5px;
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  /* font-size: 8vw; */
   font-size: 30px;
   letter-spacing: 2px;
 }
 
+h3 {
+  font-size: 22px;
+  letter-spacing: 2px;
+}
 
 /* a {} */
-
 
 /* ================================= 
   || 3. Layout
@@ -80,6 +85,13 @@ header {
 .name-wrapper {
   margin-top: 8%;
   margin-bottom: 8%;
+}
+
+.name-wrapper__content {
+  color: black;
+  letter-spacing: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .flower-wrapper {
@@ -105,17 +117,59 @@ nav {
 
 /* ---- 3.3 Main ---- */
 
-main h2 {
-  text-align: center;
+.about-wrapper__flower-image {
+  position: absolute;
+  top: 4%;
+  transform: translateX(-72%);
+  transition: width 2s, height 2s, transform 2s;
+  width: 6%;
+  height: auto;
 }
 
-section {
+.about-wrapper__flower-image:hover {
+  transform: translateX(-72%) rotate(180deg) scale(2);
+}
+
+.container {
   width: 80%;
   max-width: 850px;
   margin: 0 auto;
-
 }
 
+.about-wrapper {
+  position: relative;
+  margin-top: 10%;
+  border-left: 0.5em solid #153337;
+  background-color: rgba(204, 204, 204, 0.5);
+}
+
+.about-wrapper__content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.7em 0;
+}
+
+.about-wrapper__content--large {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  color: black;
+}
+
+.about-wrapper__content--accent {
+  color: #5c322d;
+}
+
+.about-wrapper__hr {
+  border-style: none;
+  border-top: 0.6em dotted #5c322d;
+  width: 50px;
+  margin-top: 3em;
+}
+
+.education-wrapper {
+  margin-top: 2em;
+}
 
 /* ---- 3.4 Footer ---- */
 
@@ -128,17 +182,10 @@ footer {
 
 /* ---- 3.5 Page Elements ---- */
 
-.flower {
+.flower-wrapper__image {
   width: 12%;
   height: 1%;
   margin: 0 5%;
-}
-
-.name {
-  color: black;
-  letter-spacing: 5px;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 /* ================================= 
@@ -148,14 +195,15 @@ footer {
 /* ---- 4.1 Buttons ---- */
 
 button {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
 
 .nav-button {
-  background-color: #2d565b;
-  border: .2em solid black;
+  background-color: #153337;
+  border: none;
+  border: 0.2em solid black;
   border-radius: 50px;
   text-align: center;
   color: white;
@@ -165,18 +213,15 @@ button {
   cursor: pointer;
 }
 
-
 .nav-button:hover {
-  background-color: black;
+  background-color: #2d565b;
 }
-
 
 /* ================================= 
   || 5. Media Queries
 ==================================== */
 
 @media (min-width: 600px) {
-
   h1 {
     font-size: 6vw;
   }
@@ -194,7 +239,6 @@ button {
 
   .name-wrapper {
     margin: 0;
-
   }
 
   .flower-wrapper {
@@ -203,21 +247,13 @@ button {
     margin-bottom: 0;
   }
 
-  .flower {
-    transition: width 2s, height 2s, transform 2s;
-  }
-
-  .flower:hover {
-    transform: rotate(180deg);
-  }
-
   .nav-wrapper {
     flex-direction: row;
     justify-content: center;
   }
 
   .nav-button {
-    padding: .7em .5em;
+    padding: 0.7em 0.5em;
     width: 24%;
     border: none;
     border-radius: 0;
@@ -225,22 +261,29 @@ button {
   }
 
   .top-bottom--border {
-    border-top: .22em solid black;
-    border-bottom: .22em solid black;
+    /* border-top: 0.22em solid #153337;
+    border-bottom: 0.22em solid #153337; */
+    border-top: 0.22em solid black;
+    border-bottom: 0.22em solid black;
   }
 
+  .about-wrapper {
+    border-left: 0.8em solid #153337;
+    margin-top: 3%;
+  }
 }
 
 @media (min-width: 796px) {
-
   h1 {
     font-size: 5vw;
   }
 
+  .about-wrapper__flower-image {
+    transform: translateX(-57%);
+  }
 }
 
 @media (min-width: 1025px) {
-
   header {
     margin-top: 3%;
   }
@@ -248,5 +291,4 @@ button {
   .nav-button {
     margin: 3% 0;
   }
-
 }

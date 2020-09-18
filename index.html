@@ -15,19 +15,20 @@
 <body>
   <header>
     <div class="name-wrapper">
-      <h1 class="name">Emily Scott</h1>
+      <h1 class="name-wrapper__content">Emily Scott</h1>
     </div>
     <div class="flower-wrapper">
-      <img class="flower" src="img/blueFlower.svg" alt="flower image" />
-      <img class="flower" src="img/logoBlue.svg" alt="flower image" />
-      <img class="flower" src="img/blueFlower.svg" alt="flower image" />
+      <img class="flower-wrapper__image" src="img/burgFlower.svg" alt="flower image" />
+      <img class="flower-wrapper__image" src="img/burgLogo.svg" alt="logo image" />
+      <img class="flower-wrapper__image" src="img/burgFlower.svg" alt="flower image" />
     </div>
+
   </header>
 
   <nav>
     <div class="nav-wrapper">
       <button class="nav-button top-bottom--border nav-button--about">
-        About Me
+        About
       </button>
       <button class="nav-button top-bottom--border">
         Algorithms
@@ -36,39 +37,61 @@
         Projects
       </button>
       <button class="nav-button top-bottom--border nav-button--contact">
-        Contact Me
+        Contact
       </button>
     </div>
   </nav>
 
   <main>
-    <section>
-      <h2>About Me</h2>
+    <section class="about-wrapper container">
+      <img class="about-wrapper__flower-image" src="img/burgFlower.svg" alt="black flower">
+      <div class="about-wrapper__content">
+        <h2>About me...</h2>
+        <p class="about-wrapper__content--large">Hi, I'm Emily.</p>
+        <p class="about-wrapper__content--large">I am...</p>
+        <p class="about-wrapper__content--large .about-wrapper__content--accent">curious,</p>
 
-      <p>
-        In 2011 I graduated with a Bachelor of Arts in Psychology and worked in data entry for many years.
-        As a curious, creative, and
-        analytical person I was drawn to pursue a career in computer
-        science. I worked full-time while attending school and in May 2020
-        I graduated with a Bachelor of Arts in Computer Information Systems.
-        I look forward to continually learning, creating, and gaining experience in this dynamic industry.
+        <!-- *** ADD EVENT, DISPLAY CONTENT WHEN CLICKED OR ON HOVER -->
+        <!-- <p>
+            I am curious about human behavior, motivation, and experience.
+            I am curious about technology.
+            I am curious about the interaction between the human and computer.</p> -->
+        <p class="about-wrapper__content--large .about-wrapper__content--accent">creative,</p>
+        <p>
+          <!-- *** ADD EVENT, DISPLAY CONTENT WHEN CLICKED OR ON HOVER -->
+          <!-- Through design, I am a creator of experience and feeling.
+            I am fascinated by the interplay of elements. When combined in the right way, they can elicit an experience
+            or feeling. -->
+        </p>
+        <p class="about-wrapper__content--large .about-wrapper__content--accent">and analytical.</p>
+        <!-- *** ADD EVENT, DISPLAY CONTENT WHEN CLICKED OR ON HOVER -->
+        <!-- <p>As I learn, making connections, considering the bigger picture. How do things work together...</p> -->
+        <p class="about-wrapper__content--large">I am perpetually learning and improving.</p>
+        <!-- *** ADD EVENT, DISPLAY CONTENT WHEN CLICKED OR ON HOVER -->
+        <!-- <p>I look forward to continually learning, creating, and gaining experience in this dynamic industry.</p> -->
 
-      </p>
-      <h3>Education</h3>
-      <h4>The College of St. Scholastica, Duluth, MN</h4>
-      <p>Bachelor of Arts, Computer Information Systems</p>
-      <p>Graduated May 2020</p>
-      <p>GPA: 4.0</p>
+        <hr class="about-wrapper__hr">
 
-      <h4>Winona State University, Winona, MN</h4>
-      <p>Bachelor of Arts, Psychology</p>
-      <p>Graduated December 2011</p>
+        <div class="education-wrapper">
+          <h3>Education</h3>
+          <h4>The College of St. Scholastica, Duluth, MN</h4>
+          <p>Bachelor of Arts, Computer Information Systems</p>
+          <p>Graduated May 2020</p>
+          <p>GPA: 4.0</p>
 
+          <h4>Winona State University, Winona, MN</h4>
+          <p>Bachelor of Arts, Psychology</p>
+          <p>Graduated December 2011</p>
+        </div>
 
-      <h3>My Progression</h3>
-      <h3>Skills</h3>
+        <hr class="about-wrapper__hr">
 
-
+        <h3>My Progression</h3>
+        <p>Insert timeline, mark courses and progress throughout time.</p>
+        <h3>Skills</h3>
+        Java, HTML, CSS, JavaScript (icons? How to display this better)
+      </div>
+      <!-- </div> -->
     </section>
 
     <section>

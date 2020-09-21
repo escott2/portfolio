@@ -7,75 +7,52 @@
   <title>Portfolio</title>
 
   <link rel="stylesheet" href="css/normalize.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Playfair+Display:wght@600&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
   <header>
-    <div class="name-wrapper">
-      <h1 class="name-wrapper__content">Emily Scott</h1>
+    <div class="title-wrapper">
+      <h1 class="title-wrapper__heading">Emily Scott</h1>
     </div>
     <div class="flower-wrapper">
       <img class="flower-wrapper__image" src="img/burgFlower.svg" alt="flower image" />
       <img class="flower-wrapper__image" src="img/burgLogo.svg" alt="logo image" />
       <img class="flower-wrapper__image" src="img/burgFlower.svg" alt="flower image" />
     </div>
-
   </header>
 
   <nav>
-    <div class="nav-wrapper">
-      <button class="nav-button top-bottom--border nav-button--about">
-        About
-      </button>
-      <button class="nav-button top-bottom--border">
-        Algorithms
-      </button>
-      <button class="nav-button top-bottom--border">
-        Projects
-      </button>
-      <button class="nav-button top-bottom--border nav-button--contact">
-        Contact
-      </button>
-    </div>
+    <ul class="nav">
+      <li class="nav__item nav__item--border"><a href="#link-about">About</a></li>
+      <li class="nav__item nav__item--border"><a href="#link-algorithms">Algorithms</a></li>
+      <li class="nav__item nav__item--border"><a href="#link-projects">Projects</a></li>
+      <li class="nav__item nav__item--border"><a href="#link-contact">Contact</a></li>
+    </ul>
   </nav>
 
   <main>
-    <section class="about-wrapper container">
-      <img class="about-wrapper__self-image--mobile" src="img/portraitMobile.jpg" alt="developer">
-      <img class="about-wrapper__self-image" src="img/portrait.jpg" alt="developer">
-      <img class="about-wrapper__flower-image" src="img/burgFlower.svg" alt="black flower">
+    <section id="link-about" class="about about-wrapper container">
+      <div class="portrait">
+        <img class="portrait__image" src="img/portraitMobile.jpg" alt="developer">
+      </div>
+      <img class="about-wrapper__vine-image about__img--leaf" src="img/leaf.svg" alt="leaf">
+
+      <h2 class="heading about__heading">About</h2>
       <div class="about-wrapper__content">
-        <h2 class="about-wrapper__heading">About me...</h2>
+        <h3 class="about__sub-heading">A little about me...</h3>
         <p class="about-wrapper__content--large">Hi, I'm Emily.</p>
-        <p class="about-wrapper__content--large">I am...</p>
-        <p class="about-wrapper__content--large about-wrapper__content--accent">curious,</p>
-
-        <!-- *** ADD EVENT, DISPLAY CONTENT WHEN CLICKED OR ON HOVER -->
-        <!-- <p>
-            I am curious about human behavior, motivation, and experience.
-            I am curious about technology.
-            I am curious about the interaction between the human and computer.</p> -->
-        <p class="about-wrapper__content--large about-wrapper__content--accent">creative,</p>
-        <p>
-          <!-- *** ADD EVENT, DISPLAY CONTENT WHEN CLICKED OR ON HOVER -->
-          <!-- Through design, I am a creator of experience and feeling.
-            I am fascinated by the interplay of elements. When combined in the right way, they can elicit an experience
-            or feeling. -->
-        </p>
-        <p class="about-wrapper__content--large about-wrapper__content--accent">and analytical.</p>
-        <!-- *** ADD EVENT, DISPLAY CONTENT WHEN CLICKED OR ON HOVER -->
-        <!-- <p>As I learn, making connections, considering the bigger picture. How do things work together...</p> -->
+        <p class="about-wrapper__content--large">I am a <span class="about-wrapper__content--accent">creative, curious,
+            and analytical</span> junior developer.</p>
         <p class="about-wrapper__content--large">I am perpetually learning and improving.</p>
-        <!-- *** ADD EVENT, DISPLAY CONTENT WHEN CLICKED OR ON HOVER -->
-        <!-- <p>I look forward to continually learning, creating, and gaining experience in this dynamic industry.</p> -->
-
-        <hr class="about-wrapper__hr">
+        <img class="about-wrapper__vine-image about-wrapper__flower-image education-wrapper__flower-image"
+          src="img/burgFlower.svg" alt="burgandy flower">
 
         <div class="education-wrapper">
-          <h3>Education</h3>
+          <h3 class="about__sub-heading">Education</h3>
           <h4>The College of St. Scholastica, Duluth, MN</h4>
           <p>Bachelor of Arts, Computer Information Systems</p>
           <p>Graduated May 2020</p>
@@ -86,17 +63,21 @@
           <p>Graduated December 2011</p>
         </div>
 
-        <hr class="about-wrapper__hr">
-
         <div class="progression-wrapper">
-          <h3>My Progression</h3>
-          <h4>Timeline</h4>
+          <h3 class="about__sub-heading">My Progression</h3>
+          <!-- <h4>Timeline</h4> -->
           <div class="timeline-wrapper">
             <div class="timeline">
-              <div class="t-container t-container--left">
+              <div class="t-container t-container--right">
                 <div class="timeline__content">
                   <h5>September 2020</h5>
-                  <p>Completed Self-Study: Team Treehouse Front End Web Development Track</p>
+                  <p>Completed Team Treehouse Front End Web Development Track</p>
+                </div>
+              </div>
+              <div class="t-container t-container--left">
+                <div class="timeline__content">
+                  <h5>May 2020</h5>
+                  <p>Graduated from CIS Bachelor's Program</p>
                 </div>
               </div>
               <div class="t-container t-container--right">
@@ -135,30 +116,52 @@
                   <p>Started CIS Bachelor's Degree Program</p>
                 </div>
               </div>
-
-              <!-- <p>Insert timeline, mark courses and progress throughout time.</p> -->
             </div>
           </div>
         </div>
 
 
-
-        <h3>Skills</h3>
-        Java, HTML, CSS, JavaScript (icons? How to display this better)
+        <div class="skills-wrapper">
+          <h3 class="about__sub-heading">Skills</h3>
+          <ul>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2>Algorithms</h2>
+
+
+
+    <section id="link-algorithms" class="algorithms">
+      <h2 class="heading algorithms__heading">Algorithms</h2>
+      <div class="algorithms__content container">
+        <h3>FizzBuzz</h3>
+        <h3>Reversing a String</h3>
+        <h3>Palindrome</h3>
+        <h3>Fibonacci Sequnce</h3>
+
+      </div>
 
     </section>
 
-    <section>
-      <h2>Projects</h2>
-
+    <section id="link-projects" class="projects">
+      <h2 class="heading projects__heading">Projects</h2>
+      <div class="projects__content container">
+        <h3>The Batch Bakery</h3>
+      </div>
     </section>
-    <section>
-      <h2>Contact Me</h2>
+
+
+    <section id="link-contact" class="contact container">
+      <h2 class="heading contact__heading">Contact Me</h2>
+      <div class="contact__content">
+        <h3>Email:</h3>
+        <h3>Phone:</h3>
+      </div>
 
     </section>
   </main>

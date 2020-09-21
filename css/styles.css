@@ -40,7 +40,19 @@ html {
 }
 
 body {
-  font-family: "Helvetica", sans-serif;
+  /* font-family: "Helvetica", sans-serif; */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* ================================= 
@@ -53,6 +65,7 @@ h3 {
   font-family: "Playfair Display", serif;
   font-weight: 600;
   color: black;
+
 }
 
 h1 {
@@ -70,7 +83,8 @@ h3 {
   letter-spacing: 2px;
 }
 
-/* a {} */
+
+
 
 /* ================================= 
   || 3. Layout
@@ -78,16 +92,14 @@ h3 {
 
 /* ---- 3.1 Header ---- */
 
-header {
-  text-align: center;
-}
-
-.name-wrapper {
+.title-wrapper {
   margin-top: 8%;
   margin-bottom: 8%;
+  text-align: center;
+
 }
 
-.name-wrapper__content {
+.title-wrapper__heading {
   color: black;
   letter-spacing: 5px;
   margin-top: 0;
@@ -108,60 +120,119 @@ nav {
   box-sizing: border-box;
 }
 
-.nav-wrapper {
+.nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.nav__item {
+  margin-top: 2em;
+  background-color: #2d565b;
+  width: 72%;
+  border: 0.2em solid black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav a {
+  padding: .75em 8em;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Fix UI issue: Problem, background color changes when hovering over an unclickable space within nav-item.
+    Fix with JS - when hovering over .nav a, turn nav-item background darker color.  */
+.nav__item:hover {
+  background-color: #153337;
 }
 
 /* ---- 3.3 Main ---- */
 
 .container {
-  width: 80%;
+  width: 90%;
   max-width: 850px;
   margin: 0 auto;
 }
+
+.heading {
+  text-align: center;
+  font-weight: 400;
+  padding: .5em;
+  margin: 0;
+}
+
 
 /* ------------- 3.3.1 About ---- */
 
 .about-wrapper {
   position: relative;
   margin-top: 10%;
-  border-left: 0.5em solid #153337;
-  background-color: rgba(204, 204, 204, 0.5);
+  margin-bottom: 2em;
+  border-left: 0.8em solid #153337;
+  background-color: rgba(204, 204, 204, 0.3);
 }
 
-.about-wrapper__self-image {
-  display: none;
+.about__heading {
+  background-color: #153337;
+  /* background-color: #5c322d; */
+  color: white;
+  width: 100%;
 }
 
-.about-wrapper__self-image--mobile {
+.portrait {
+  width: 110%;
+  background-color: white;
+  transform: translateX(-35px);
+}
+
+.portrait__image {
   width: 100%;
   display: block;
 }
 
-.about-wrapper__flower-image {
+.about-wrapper__vine-image {
   position: absolute;
-  top: 4%;
-  transform: translateX(-72%);
+  z-index: 1;
+}
+
+.about-wrapper__flower-image {
+  top: 0;
   transition: width 2s, height 2s, transform 2s;
-  width: 6%;
+  width: 12%;
   height: auto;
+  z-index: 1;
+  transform: translateX(-150%);
+
 }
 
 .about-wrapper__flower-image:hover {
-  transform: translateX(-72%) rotate(180deg) scale(2);
+  transform: scale(2) translateX(-72%);
+}
+
+.about__img--leaf {
+  top: 13%;
+  width: 10%;
+  transform: translateX(-68%);
+
+}
+
+.leaf-two {
+  top: 19%;
 }
 
 .about-wrapper__content {
   width: 80%;
   margin: 0 auto;
-  padding: 1em 0;
 }
 
 .about-wrapper__content--large {
-  font-weight: bold;
+  font-weight: 400;
   font-size: 20px;
   font-family: "Playfair Display", serif;
   color: black;
@@ -169,27 +240,39 @@ nav {
 
 .about-wrapper__content--accent {
   color: #5c322d;
+  font-weight: 600;
 }
 
 .about-wrapper__hr {
   border-style: none;
-  border-top: 0.4em dotted black;
-  width: 50px;
+  border-top: 0.2em solid black;
+  width: 100px;
   margin-top: 3em;
 }
 
 .education-wrapper {
   margin-top: 2em;
+
 }
 
+.education-wrapper__flower-image {
+  top: 32%;
+}
+
+.education-wrapper h4 {
+  font-size: 18px;
+}
+
+/* MAKE WIDER ___________________________________________________________________*/
 .progression-wrapper {
-  height: 500px;
+  /* height: 600px; */
 }
 
 .timeline-wrapper {
   height: 400px;
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: #153337;
 }
 
 .timeline {
@@ -203,7 +286,7 @@ nav {
   content: "";
   position: absolute;
   width: 6px;
-  background-color: #153337;
+  background-color: white;
   top: 0;
   bottom: 0;
   left: 31px;
@@ -220,11 +303,11 @@ nav {
 .t-container::after {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   right: -12px;
-  background-color: white;
-  border: 4px solid #2d565b;
+  background-color: #5c322d;
+  border: 4px solid white;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -241,6 +324,7 @@ nav {
 .t-container--left::after {
   left: 0px;
 }
+
 .t-container--right::after {
   left: 0px;
 }
@@ -251,6 +335,78 @@ nav {
   position: relative;
   border-radius: 6px;
 }
+
+.skill-flower {
+  width: 12%;
+  display: inline-block;
+}
+
+.skills-wrapper {
+  padding-bottom: 3em;
+}
+
+.about__sub-heading {
+  background-color: white;
+  border: .15em solid black;
+  padding: 0.5em;
+  text-align: center;
+  width: 100%;
+  margin: 2em auto;
+}
+
+.skills-wrapper li {
+  font-size: 18px;
+  padding: 1em;
+  background-color: white;
+}
+
+.algorithms {
+  background-color: white;
+  padding: 2em;
+
+}
+
+.algorithms__heading {
+  background-color: #5c322d;
+  width: 100%;
+  max-width: 1200px;
+  color: white;
+  margin: 0 auto;
+}
+
+
+.projects {
+  background-color: white;
+  padding: 2em;
+}
+
+.projects__heading {
+  background-color: #153337;
+  width: 100%;
+  max-width: 1200px;
+  color: white;
+  margin: 0 auto;
+}
+
+.contact {
+  border: 0.8em solid #153337;
+  background-color: #2d565b;
+  color: white;
+
+}
+
+.contact__heading {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+
+.contact__content {
+  width: 80%;
+  margin: 0 auto;
+}
+
 
 /* ---- 3.4 Footer ---- */
 
@@ -275,32 +431,17 @@ footer {
 
 /* ---- 4.1 Buttons ---- */
 
-button {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-}
-
-.nav-button {
-  background-color: #153337;
-  border: none;
-  border: 0.2em solid black;
-  border-radius: 50px;
-  text-align: center;
-  color: white;
-  padding: 1em 1em;
-  margin: 4% 1%;
-  width: 72%;
-  cursor: pointer;
-}
-
-.nav-button:hover {
-  background-color: #2d565b;
-}
 
 /* ================================= 
   || 5. Media Queries
 ==================================== */
+@media (min-width: 380px) {
+  .about__img--leaf {
+    top: 20%;
+    width: 8%;
+    transform: translateX(-64%);
+  }
+}
 
 @media (min-width: 600px) {
   h1 {
@@ -318,8 +459,12 @@ button {
     margin-top: 4%;
   }
 
-  .name-wrapper {
+  .title-wrapper {
     margin: 0;
+  }
+
+  .title-wrapper__heading {
+    padding-left: 1em;
   }
 
   .flower-wrapper {
@@ -328,20 +473,36 @@ button {
     margin-bottom: 0;
   }
 
-  .nav-wrapper {
+  .nav {
     flex-direction: row;
     justify-content: center;
   }
 
+  .nav__item {
+    border: none;
+    border-radius: 0px;
+    width: 24%;
+  }
+
+  .nav a {
+    font-size: 18px;
+    padding: .75em 1.25em;
+    border: none;
+  }
+
+
+
+
+  /* 
   .nav-button {
     padding: 0.7em 0.5em;
     width: 24%;
     border: none;
     border-radius: 0;
     margin: 4% 0;
-  }
+  } */
 
-  .top-bottom--border {
+  .nav__item--border {
     /* border-top: 0.22em solid #153337;
     border-bottom: 0.22em solid #153337; */
     border-top: 0.22em solid black;
@@ -353,21 +514,32 @@ button {
     margin-top: 3%;
   }
 
+  .portrait {
+    transform: translateX(-50px);
+  }
+
+  .portrait__image {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  /* .about__img--leaf {
+    top: 17%;
+    width: 8%;
+    transform: translateX(-64%);
+  } */
+
+  .about-wrapper__flower-image {
+
+    transform: translateX(-140%);
+  }
+
   .about-wrapper__heading {
     padding-bottom: 0.75em;
   }
 
-  .about-wrapper__self-image {
-    display: block;
-    width: 30%;
-    height: auto;
-    position: absolute;
-    top: 0%;
-    transform: translateX(245%);
-  }
-
-  .about-wrapper__self-image--mobile {
-    display: none;
+  .timeline-wrapper {
+    height: 600px;
   }
 
   .timeline::after {
@@ -376,6 +548,11 @@ button {
 
   .t-container {
     width: 50%;
+  }
+
+  .t-container::after {
+    width: 40px;
+    height: 40px;
   }
 
   .t-container--left {
@@ -390,6 +567,7 @@ button {
   .t-container--left::after {
     left: auto;
   }
+
   .t-container--right::after {
     left: -13px;
   }
@@ -400,9 +578,6 @@ button {
     font-size: 5vw;
   }
 
-  .about-wrapper__flower-image {
-    transform: translateX(-57%);
-  }
 }
 
 @media (min-width: 1025px) {

@@ -1,176 +1,344 @@
 ﻿<!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-
-<body>
-  <header>
-    <div class="title-wrapper">
-      <h1 class="title-wrapper__heading">Emily Scott</h1>
-    </div>
-    <div class="flower-wrapper">
-      <img class="flower-wrapper__image" src="img/burgFlower.svg" alt="flower image" />
-      <img class="flower-wrapper__image" src="img/burgLogo.svg" alt="logo image" />
-      <img class="flower-wrapper__image" src="img/burgFlower.svg" alt="flower image" />
-    </div>
-  </header>
-
-  <nav>
-    <ul class="nav">
-      <li class="nav__item nav__item--border"><a href="#link-about">About</a></li>
-      <li class="nav__item nav__item--border"><a href="#link-algorithms">Algorithms</a></li>
-      <li class="nav__item nav__item--border"><a href="#link-projects">Projects</a></li>
-      <li class="nav__item nav__item--border"><a href="#link-contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="link-about" class="about about-wrapper container">
-      <div class="portrait">
-        <img class="portrait__image" src="img/portraitMobile.jpg" alt="developer">
+  <body>
+    <header>
+      <div class="title-wrapper">
+        <h1 class="title-wrapper__heading">Emily Scott</h1>
       </div>
-      <img class="about-wrapper__vine-image about__img--leaf" src="img/leaf.svg" alt="leaf">
+      <div class="flower-wrapper">
+        <img
+          class="flower-wrapper__image"
+          src="img/burgFlower.svg"
+          alt="flower image"
+        />
+        <img
+          class="flower-wrapper__image"
+          src="img/burgLogo.svg"
+          alt="logo image"
+        />
+        <img
+          class="flower-wrapper__image"
+          src="img/burgFlower.svg"
+          alt="flower image"
+        />
+      </div>
+    </header>
 
-      <h2 class="heading about__heading">About</h2>
-      <div class="about-wrapper__content">
-        <h3 class="about__sub-heading">A little about me...</h3>
-        <p class="about-wrapper__content--large">Hi, I'm Emily.</p>
-        <p class="about-wrapper__content--large">I am a <span class="about-wrapper__content--accent">creative, curious,
-            and analytical</span> junior developer.</p>
-        <p class="about-wrapper__content--large">I am perpetually learning and improving.</p>
-        <img class="about-wrapper__vine-image about-wrapper__flower-image education-wrapper__flower-image"
-          src="img/burgFlower.svg" alt="burgandy flower">
+    <nav>
+      <ul class="nav">
+        <li class="nav__item nav__item--border">
+          <a href="#link-about">About</a>
+        </li>
+        <li class="nav__item nav__item--border">
+          <a href="#link-algorithms">Algorithms</a>
+        </li>
+        <li class="nav__item nav__item--border">
+          <a href="#link-projects">Projects</a>
+        </li>
+        <li class="nav__item nav__item--border">
+          <a href="#link-contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-        <div class="education-wrapper">
-          <h3 class="about__sub-heading">Education</h3>
-          <h4>The College of St. Scholastica, Duluth, MN</h4>
-          <p>Bachelor of Arts, Computer Information Systems</p>
-          <p>Graduated May 2020</p>
-          <p>GPA: 4.0</p>
-
-          <h4>Winona State University, Winona, MN</h4>
-          <p>Bachelor of Arts, Psychology</p>
-          <p>Graduated December 2011</p>
+    <main>
+      <section id="link-about" class="about">
+        <div class="portrait container">
+          <img
+            class="portrait__image"
+            src="img/portrait-placeholder.jpg"
+            alt="trees"
+          />
         </div>
+        <h2 class="heading about__heading">About</h2>
+        <div class="about__main-wrapper container">
+          <!-- <img
+            class="about-wrapper__vine-image leaf leaf--first"
+            src="img/leaf.svg"
+            alt="leaf"
+          />
+          <img
+            class="about-wrapper__vine-image leaf leaf--second"
+            src="img/leaf.svg"
+            alt="leaf"
+          /> -->
 
-        <div class="progression-wrapper">
-          <h3 class="about__sub-heading">My Progression</h3>
-          <!-- <h4>Timeline</h4> -->
-          <div class="timeline-wrapper">
-            <div class="timeline">
-              <div class="t-container t-container--right">
-                <div class="timeline__content">
-                  <h5>September 2020</h5>
-                  <p>Completed Team Treehouse Front End Web Development Track</p>
-                </div>
+          <div class="about__intro-wrapper">
+            <h3 class="about__sub-heading">A little about me...</h3>
+            <div class="about__content-container about__text--large">
+              <img
+                class="about-wrapper__vine-image leaf leaf--intro"
+                src="img/leaf.svg"
+                alt="leaf"
+              />
+              <p>Hi, I'm Emily.</p>
+              <p>
+                I am a
+                <span class="about__text--accent"
+                  >creative, curious, and analytical</span
+                >
+                junior developer.
+              </p>
+              <p>I am perpetually learning and improving.</p>
+            </div>
+          </div>
+
+          <div class="about__education-wrapper">
+            <h3 class="about__sub-heading">Education</h3>
+      
+            <div class="about__school-wrapper">
+              <div class="about__school-container">
+                <img
+                class="about-wrapper__vine-image school-flower"
+                src="img/burgFlower.svg"
+                alt="burgandy flower">
+                <h4>The College of St. Scholastica</h4>
+                <p>Duluth, Minnesota</p>
+                <p></p>Computer Information Systems, B.A.</p>
+                <p>Graduated May 2020</p>
+                <p>GPA - 4.0</p>
               </div>
-              <div class="t-container t-container--left">
-                <div class="timeline__content">
-                  <h5>May 2020</h5>
-                  <p>Graduated from CIS Bachelor's Program</p>
-                </div>
+
+              <div class="about__school-container">
+                <img
+                class="about-wrapper__vine-image school-flower"
+                src="img/burgFlower.svg"
+                alt="burgandy flower">
+                <h4>Winona State University</h4>
+                <p>Winona, Minnesota</p>
+                <p>Psychology, B.A.</p>
+                <p>Graduated December 2011</p>
               </div>
-              <div class="t-container t-container--right">
-                <div class="timeline__content">
-                  <h5>May 2020</h5>
-                  <p>Completed College Courses: Project Management & Capstone Project</p>
+            </div>
+          </div>
+
+          <div class="progression-wrapper">
+            <h3 class="about__sub-heading">My Progression</h3>
+            <!-- <h4>Timeline</h4> -->
+            <div class="timeline-wrapper">
+              <div class="timeline">
+                <div class="t-container t-container--right">
+                  <div class="timeline__content">
+                    <h5>September 2020</h5>
+                    <p>
+                      Completed Team Treehouse Front End Web Development Track
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="t-container t-container--left">
-                <div class="timeline__content">
-                  <h5>December 2019</h5>
-                  <p>Completed College Courses: Business Writing & University Requirements</p>
+                <div class="t-container t-container--left">
+                  <div class="timeline__content">
+                    <h5>May 2020</h5>
+                    <p>Graduated from CIS Bachelor's Program</p>
+                  </div>
                 </div>
-              </div>
-              <div class="t-container t-container--right">
-                <div class="timeline__content">
-                  <h5>August 2019</h5>
-                  <p>Completed College Courses: Systems Analysis & Database Modeling</p>
+                <div class="t-container t-container--right">
+                  <div class="timeline__content">
+                    <h5>May 2020</h5>
+                    <p>
+                      Completed College Courses: Project Management & Capstone
+                      Project
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="t-container t-container--left">
-                <div class="timeline__content">
-                  <h5>May 2019</h5>
-                  <p>Completed College Courses: Computer Architecture & Java II </p>
+                <div class="t-container t-container--left">
+                  <div class="timeline__content">
+                    <h5>December 2019</h5>
+                    <p>
+                      Completed College Courses: Business Writing & University
+                      Requirements
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="t-container t-container--right">
-                <div class="timeline__content">
-                  <h5>December 2018</h5>
-                  <p>Completed College Courses: Computer Science Principles & Java I</p>
+                <div class="t-container t-container--right">
+                  <div class="timeline__content">
+                    <h5>August 2019</h5>
+                    <p>
+                      Completed College Courses: Systems Analysis & Database
+                      Modeling
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="t-container t-container--left">
-                <div class="timeline__content">
-                  <h5>August 2018</h5>
-                  <p>Started CIS Bachelor's Degree Program</p>
+                <div class="t-container t-container--left">
+                  <div class="timeline__content">
+                    <h5>May 2019</h5>
+                    <p>
+                      Completed College Courses: Computer Architecture & Java II
+                    </p>
+                  </div>
+                </div>
+                <div class="t-container t-container--right">
+                  <div class="timeline__content">
+                    <h5>December 2018</h5>
+                    <p>
+                      Completed College Courses: Computer Science Principles &
+                      Java I
+                    </p>
+                  </div>
+                </div>
+                <div class="t-container t-container--left">
+                  <div class="timeline__content">
+                    <h5>August 2018</h5>
+                    <p>Started CIS Bachelor's Degree Program</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="skills-wrapper">
+            <h3 class="about__sub-heading">Skills</h3>
+            <ul>
+              <li>Java</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <!-- </div> -->
         </div>
+      </section>
 
+      <section id="link-algorithms" class="algorithms">
+        <h2 class="heading algorithms__heading">Algorithms</h2>
+        <div class="algorithms__content container">
+          <h3>FizzBuzz</h3>
 
-        <div class="skills-wrapper">
-          <h3 class="about__sub-heading">Skills</h3>
-          <ul>
-            <li>Java</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
+          <p
+            class="codepen"
+            data-height="367"
+            data-theme-id="dark"
+            data-default-tab="js,result"
+            data-user="escott2"
+            data-slug-hash="NWNEYjJ"
+            style="
+              height: 367px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+            data-pen-title="FizzBuzz"
+          >
+            <span
+              >See the Pen
+              <a href="https://codepen.io/escott2/pen/NWNEYjJ"> FizzBuzz</a> by
+              escott2 (<a href="https://codepen.io/escott2">@escott2</a>) on
+              <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
+          <script
+            async
+            src="https://static.codepen.io/assets/embed/ei.js"
+          ></script>
+
+          <h3>Reversing a String</h3>
+
+          <p
+            class="codepen"
+            data-height="265"
+            data-theme-id="dark"
+            data-default-tab="js,result"
+            data-user="escott2"
+            data-slug-hash="YzqdNje"
+            style="
+              height: 265px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+            data-pen-title="Reversing a String"
+          >
+            <span
+              >See the Pen
+              <a href="https://codepen.io/escott2/pen/YzqdNje">
+                Reversing a String</a
+              >
+              by escott2 (<a href="https://codepen.io/escott2">@escott2</a>) on
+              <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
+          <script
+            async
+            src="https://static.codepen.io/assets/embed/ei.js"
+          ></script>
+
+          <h3>Palindrome</h3>
+
+          <p
+            class="codepen"
+            data-height="265"
+            data-theme-id="dark"
+            data-default-tab="js,result"
+            data-user="escott2"
+            data-slug-hash="qBZLrmY"
+            style="
+              height: 265px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+            data-pen-title="Palindrome Checker"
+          >
+            <span
+              >See the Pen
+              <a href="https://codepen.io/escott2/pen/qBZLrmY">
+                Palindrome Checker</a
+              >
+              by escott2 (<a href="https://codepen.io/escott2">@escott2</a>) on
+              <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
+          <script
+            async
+            src="https://static.codepen.io/assets/embed/ei.js"
+          ></script>
+
+          <h3>Fibonacci Sequnce</h3>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <section id="link-projects" class="projects">
+        <h2 class="heading projects__heading">Projects</h2>
+        <div class="projects__content container">
+          <h3>The Batch Bakery</h3>
+        </div>
+      </section>
 
+      <section id="link-contact" class="contact container">
+        <h2 class="heading contact__heading">Contact Me</h2>
+        <div class="contact__content">
+          <h3>Email:</h3>
+          <h3>Phone:</h3>
+        </div>
+      </section>
+    </main>
 
+    <footer></footer>
 
-    <section id="link-algorithms" class="algorithms">
-      <h2 class="heading algorithms__heading">Algorithms</h2>
-      <div class="algorithms__content container">
-        <h3>FizzBuzz</h3>
-        <h3>Reversing a String</h3>
-        <h3>Palindrome</h3>
-        <h3>Fibonacci Sequnce</h3>
-
-      </div>
-
-    </section>
-
-    <section id="link-projects" class="projects">
-      <h2 class="heading projects__heading">Projects</h2>
-      <div class="projects__content container">
-        <h3>The Batch Bakery</h3>
-      </div>
-    </section>
-
-
-    <section id="link-contact" class="contact container">
-      <h2 class="heading contact__heading">Contact Me</h2>
-      <div class="contact__content">
-        <h3>Email:</h3>
-        <h3>Phone:</h3>
-      </div>
-
-    </section>
-  </main>
-
-
-  <footer>
-  </footer>
-
-  <script src="scripts.js"></script>
-</body>
-
+    <script src="scripts.js"></script>
+  </body>
 </html>

@@ -140,7 +140,7 @@ nav {
 }
 
 .nav a {
-  padding: .75em 8em;
+  padding: .75em 6em;
   color: white;
   font-size: 20px;
   font-weight: 600;
@@ -155,7 +155,7 @@ nav {
 /* ---- 3.3 Main ---- */
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 850px;
   margin: 0 auto;
 }
@@ -170,25 +170,37 @@ nav {
 
 /* ------------- 3.3.1 About ---- */
 
-.about-wrapper {
+.about__main-wrapper {
   position: relative;
-  margin-top: 10%;
   margin-bottom: 2em;
   border-left: 0.8em solid #153337;
+  border-right: 0.8em solid #153337;
   background-color: rgba(204, 204, 204, 0.3);
 }
 
 .about__heading {
   background-color: #153337;
-  /* background-color: #5c322d; */
   color: white;
-  width: 100%;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+}
+
+.about__sub-heading {
+  background-color: white;
+  border-top: .15em solid black;
+  border-bottom: .15em solid black;
+  padding: 0.5em;
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .portrait {
-  width: 110%;
-  background-color: white;
-  transform: translateX(-35px);
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 .portrait__image {
@@ -201,44 +213,63 @@ nav {
   z-index: 1;
 }
 
-.about-wrapper__flower-image {
+.about__flower-img {
   top: 0;
   transition: width 2s, height 2s, transform 2s;
   width: 12%;
   height: auto;
   z-index: 1;
-  transform: translateX(-150%);
+  transform: translateX(750%);
+  overflow-x: hidden;
 
 }
 
-.about-wrapper__flower-image:hover {
+.school-flower {
+  width: 80px;
+  top: 200px;
+  left: 260px;
+
+}
+
+/* .about__flower-img:hover {
   transform: scale(2) translateX(-72%);
+  overflow-x: hidden;
+} */
+
+.leaf {
+  width: 8%;
 }
 
-.about__img--leaf {
-  top: 13%;
-  width: 10%;
-  transform: translateX(-68%);
-
+.leaf--intro {
+  top: 5%;
+  transform: rotate(-5deg) translateX(-170%);
+  overflow-x: hidden;
 }
 
-.leaf-two {
+.leaf--education {
   top: 19%;
+  transform: translateX(-150%);
+  overflow-x: hidden;
 }
 
-.about-wrapper__content {
+.about__intro-wrapper {
+  position: relative;
+}
+
+.about__content-container {
   width: 80%;
   margin: 0 auto;
 }
 
-.about-wrapper__content--large {
+/* probably should take off font-family & color, could also abstract text from about section. More reusable. */
+.about__text--large {
   font-weight: 400;
   font-size: 20px;
   font-family: "Playfair Display", serif;
   color: black;
 }
 
-.about-wrapper__content--accent {
+.about__text--accent {
   color: #5c322d;
   font-weight: 600;
 }
@@ -250,18 +281,40 @@ nav {
   margin-top: 3em;
 }
 
-.education-wrapper {
+.about__education-wrapper {
   margin-top: 2em;
-
+  position: relative;
 }
 
-.education-wrapper__flower-image {
-  top: 32%;
+.about__flower-img--education {
+  top: 0%;
 }
 
-.education-wrapper h4 {
+.about__school-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 700px;
+}
+
+
+.about__school-container {
+  background-color: white;
+  border: 1.5em solid rgba(45, 86, 91, 0.3);
+  width: 350px;
+  height: 300px;
+  padding: 1em 0 1em 1em;
+  line-height: 20px;
+  color: black;
+  position: relative;
+}
+
+
+/* .about__school-wrapper h4 {
   font-size: 18px;
-}
+
+} */
 
 /* MAKE WIDER ___________________________________________________________________*/
 .progression-wrapper {
@@ -273,6 +326,7 @@ nav {
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #153337;
+  margin: 1em;
 }
 
 .timeline {
@@ -343,15 +397,6 @@ nav {
 
 .skills-wrapper {
   padding-bottom: 3em;
-}
-
-.about__sub-heading {
-  background-color: white;
-  border: .15em solid black;
-  padding: 0.5em;
-  text-align: center;
-  width: 100%;
-  margin: 2em auto;
 }
 
 .skills-wrapper li {
@@ -435,13 +480,16 @@ footer {
 /* ================================= 
   || 5. Media Queries
 ==================================== */
-@media (min-width: 380px) {
-  .about__img--leaf {
-    top: 20%;
+/* @media (min-width: 380px) {
+  .leaf {
     width: 8%;
     transform: translateX(-64%);
   }
-}
+
+  .leaf--first {
+    top: 20%;
+  }
+} */
 
 @media (min-width: 600px) {
   h1 {
@@ -457,6 +505,10 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 4%;
+  }
+
+  .container {
+    width: 95%;
   }
 
   .title-wrapper {
@@ -490,48 +542,9 @@ footer {
     border: none;
   }
 
-
-
-
-  /* 
-  .nav-button {
-    padding: 0.7em 0.5em;
-    width: 24%;
-    border: none;
-    border-radius: 0;
-    margin: 4% 0;
-  } */
-
   .nav__item--border {
-    /* border-top: 0.22em solid #153337;
-    border-bottom: 0.22em solid #153337; */
     border-top: 0.22em solid black;
     border-bottom: 0.22em solid black;
-  }
-
-  .about-wrapper {
-    border-left: 0.8em solid #153337;
-    margin-top: 3%;
-  }
-
-  .portrait {
-    transform: translateX(-50px);
-  }
-
-  .portrait__image {
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  /* .about__img--leaf {
-    top: 17%;
-    width: 8%;
-    transform: translateX(-64%);
-  } */
-
-  .about-wrapper__flower-image {
-
-    transform: translateX(-140%);
   }
 
   .about-wrapper__heading {
@@ -576,6 +589,13 @@ footer {
 @media (min-width: 796px) {
   h1 {
     font-size: 5vw;
+  }
+
+  .about__school-wrapper {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2em 0;
+    height: auto;
   }
 
 }

@@ -55,6 +55,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 /* ================================= 
   || 2. Typography
 ==================================== */
@@ -305,17 +309,6 @@ nav {
   position: relative;
 }
 
-
-/* .about__school-wrapper h4 {
-  font-size: 18px;
-
-} */
-
-/* MAKE WIDER ___________________________________________________________________*/
-.progression-wrapper {
-  /* height: 600px; */
-}
-
 .timeline-wrapper {
   height: 400px;
   overflow-x: hidden;
@@ -488,6 +481,23 @@ footer {
   justify-content: flex-start;
   align-items: center;
   height: 18vh;
+  background-color: #2d565b;
+  color: white;
+}
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__nav a {
+  color: white;
+  font-size: 1.25rem;
+  text-decoration: underline;
+}
+
+.footer__link {
+  padding: 0.5em;
 }
 
 /* ---- 3.5 Page Elements ---- */
@@ -611,6 +621,12 @@ footer {
 
   .t-container--right::after {
     left: -13px;
+  }
+
+  .footer__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 

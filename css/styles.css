@@ -231,11 +231,6 @@ nav {
 
 }
 
-/* .about__flower-img:hover {
-  transform: scale(2) translateX(-72%);
-  overflow-x: hidden;
-} */
-
 .leaf {
   width: 8%;
 }
@@ -330,17 +325,18 @@ nav {
 }
 
 .timeline {
-  height: 1300px;
+  height: 2000px;
   position: relative;
   margin: 0 auto;
   padding: 1em;
 }
 
+/*creates line*/
 .timeline::after {
   content: "";
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: black;
   top: 0;
   bottom: 0;
   left: 31px;
@@ -354,6 +350,7 @@ nav {
   position: relative;
 }
 
+/* creates circles */
 .t-container::after {
   content: "";
   position: absolute;
@@ -361,7 +358,7 @@ nav {
   height: 30px;
   right: -12px;
   background-color: #5c322d;
-  border: 4px solid white;
+  border: 4px solid black;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -383,12 +380,26 @@ nav {
   left: 0px;
 }
 
+.timeline__content-wrapper {
+  background-color: white;
+
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.timeline__content--date {
+  font-weight: 600;
+  text-align: center;
+}
+
 .timeline__content {
   padding: 20px 30px;
-  background-color: white;
+  margin-top: 10px;
+  background-color: rgba(45, 86, 91, 0.3);
   position: relative;
   border-radius: 6px;
 }
+
 
 .skill-flower {
   width: 12%;
@@ -396,13 +407,28 @@ nav {
 }
 
 .skills-wrapper {
-  padding-bottom: 3em;
+  padding: 2em 0;
+}
+
+.about__skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 1.5em 0;
 }
 
 .skills-wrapper li {
-  font-size: 18px;
-  padding: 1em;
-  background-color: white;
+  font-size: 25px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  width: 110px;
+  height: 110px;
+  margin: 5px;
+  padding-top: 40px;
+  background-color: #153337;
+  border-radius: 200px;
 }
 
 .algorithms {
@@ -433,7 +459,8 @@ nav {
   margin: 0 auto;
 }
 
-.contact {
+
+.contact__form-wrapper {
   border: 0.8em solid #153337;
   background-color: #2d565b;
   color: white;
@@ -445,6 +472,7 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
   color: white;
+  background-color: #5c322d;
 }
 
 .contact__content {

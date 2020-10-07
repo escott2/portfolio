@@ -74,11 +74,16 @@ h1 {
 h2 {
   font-size: 30px;
   letter-spacing: 2px;
+  /* font-family: inherit; */
+
+
 }
 
 h3 {
   font-size: 22px;
   letter-spacing: 2px;
+  font-family: inherit;
+
 }
 
 /* ================================= 
@@ -148,7 +153,6 @@ h3 {
 
 .heading {
   text-align: center;
-  font-weight: 400;
   padding: 0.5em;
   margin: 0 auto;
   width: 90%;
@@ -226,7 +230,8 @@ h3 {
 .about__text--large {
   font-weight: 400;
   font-size: 20px;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
+  font-family: "Times New Roman", Times, serif;
   color: black;
 }
 
@@ -525,7 +530,6 @@ h3 {
   }
 
   .nav a {
-    font-size: 18px;
     padding: 0.75em 1.25em;
     border: none;
   }
@@ -581,9 +585,6 @@ h3 {
 }
 
 @media (min-width: 796px) {
-  h1 {
-    font-size: 5vw;
-  }
 
   .about__school-wrapper {
     flex-direction: row;

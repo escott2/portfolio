@@ -25,6 +25,8 @@ TABLE OF CONTENTS
 
 ================================= */
 
+/* Colors: burg - #5c322d */
+
 /* ================================= 
   || 1. Global Styles
 ==================================== */
@@ -152,8 +154,8 @@ h4 {
 .nav__item {
   display: flex;
   justify-content: center;
-  background-color: #2d565b;
-  border: 0.2em solid black;
+  background-color:#2d565b;
+  border: 0.2em solid #153337;
   border-radius: 50px;
   margin-top: 2em;
   width: 72%;
@@ -161,6 +163,7 @@ h4 {
 
 .nav a {
   color: white;
+  /* color: inherit; */
   padding: 0.75em 5em;
 }
 
@@ -199,8 +202,8 @@ main {
 
 .sub-heading {
   background-color: white;
-  border-top: 0.15em solid black;
-  border-bottom: 0.15em solid black;
+  /* border-top: 0.15em solid black;
+  border-bottom: 0.15em solid black; */
   padding: 0.5em;
   text-align: center;
   width: 95%;
@@ -214,6 +217,25 @@ main {
 }
 
 /* ------------- 3.3.1 About ---- */
+.about__flower-wrapper {
+  /* margin: 1em auto; */
+  text-align: center;
+  /* background-color: black; */
+  /* background-color: #2d565b; */
+  /* padding: 1em; */
+  margin: 0 auto;
+  width: 1200px;
+  /* height: 100px; */
+  overflow-x: hidden;
+  /* margin-left: -40px; */
+}
+
+.flower-flex {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  /* align-items: center; */
+}
 
 .about__main-wrapper {
   position: relative;
@@ -231,6 +253,20 @@ main {
 
 .about__intro-wrapper {
   position: relative;
+}
+
+.about__curiosity-loop {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+}
+
+.loop--offset-1 {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%235C322DFF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.loop--offset-2 {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%235C322DFF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='10' stroke-linecap='square'/%3e%3c/svg%3e");
 }
 
 /* probably should take off font-family & color, could also abstract text from about section. More reusable. */
@@ -410,7 +446,7 @@ main {
 }
 
 .algorithms__heading {
-  background-color: #5c322d;
+  background-color: #2d565b;
   color: white;
   margin: 0 auto;
 }
@@ -507,7 +543,7 @@ main {
 
 @media (min-width: 600px) {
   h1 {
-    font-size: 6vw;
+    font-size: 60px;
   }
 
   button {
@@ -535,8 +571,8 @@ main {
   }
 
   .title-wrapper__heading {
-    padding-left: 1em;
-    margin: 0 0;
+    /* padding-left: 1em; */
+    margin: 0;
   }
 
   .flower-wrapper {
@@ -555,6 +591,7 @@ main {
     border-radius: 0px;
     width: 24%;
     margin-right: -4px;
+    margin-top: 2em;
   }
 
   .nav a {
@@ -563,8 +600,8 @@ main {
   }
 
   .nav__item--border {
-    border-top: 0.22em solid black;
-    border-bottom: 0.22em solid black;
+    border-top: 0.22em solid #153337;
+    border-bottom: 0.22em solid #153337;
   }
 
   .about-wrapper__heading {
@@ -625,7 +662,7 @@ main {
 
 @media (min-width: 1025px) {
   header {
-    margin-top: 3%;
+    margin-top: 0;
   }
 
   .nav-button {

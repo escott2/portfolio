@@ -10,21 +10,30 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap"
     rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css" />
+
 </head>
+
 
 <body>
   <a id="link-top"></a>
+  <div class="about__flower-wrapper js-generate-flowers--top">
+  </div>
   <header>
     <div class="title-wrapper">
       <h1 class="title-wrapper__heading">Emily Scott</h1>
     </div>
-    <div class="flower-wrapper">
+    <!-- <div class="flower-wrapper">
       <img class="flower-wrapper__image" src="img/burgFlower.svg" alt="flower image" />
       <img class="flower-wrapper__image" src="img/burgLogo.svg" alt="logo image" />
       <img class="flower-wrapper__image" src="img/burgFlower.svg" alt="flower image" />
-    </div>
+    </div> -->
+
   </header>
+  <!-- <div class="about__flower-wrapper js-generate-flowers--bottom flower-flex">   
+  </div> -->
 
   <nav>
     <ul class="nav">
@@ -44,33 +53,39 @@
   </nav>
 
   <main>
+
     <section id="link-about" class="about">
       <h2 class="heading about__heading">About</h2>
+      <!-- <div class="about__flower-wrapper js-generate-flowers container flower-flex">
+        
+      </div> -->
       <div class="about__main-wrapper container">
 
         <div class="about__intro-wrapper">
           <h3 class="sub-heading">Introduction</h3>
           <div class="content-container">
-            <p>            
+            <p>
               Growing up, I curiously witnessed technology evolve.
               And this evolution changed my life experience, little by little.
               Computers continually integrated something new and magical.
 
-              <p>For many years I pondered this magic.</p>
-              <div class="about__flex indent-content">
-                <img class="flower--small flower--inline-block" src="img/burgFlower.svg" alt="flower">
-                <p>As I studied on a laptop while completing a degree in psychology.</p>
+              <div class="about__curiosity-loop">
+                <p>For many years I pondered this magic.</p>
+                <div class="about__flex indent-content">
+                  <!-- <img class="flower--small flower--inline-block" src="img/burgFlower.svg" alt="flower"> -->
+                  <p>As I studied on a laptop while completing a degree in psychology.</p>
+                </div>
+                <div class="about__flex indent-content">
+                  <!-- <img class="flower--small flower--inline-block" src="img/burgFlower.svg" alt="flower"> -->
+                  <p class="">As I worked with different information systems, as a data clerk.</p>
+                </div>
+                <div class="about__flex indent-content">
+                  <!-- <img class="flower--small flower--inline-block" src="img/burgFlower.svg" alt="flower"> -->
+                  <p class="">As I streamed media, browsed websites, and interacted with apps.</p>
+                </div>
               </div>
-              <div class="about__flex indent-content">
-                <img class="flower--small flower--inline-block" src="img/burgFlower.svg" alt="flower">
-                <p class="">As I worked with different information systems, as a data clerk.</p>
-              </div>
-              <div class="about__flex indent-content">
-              <img class="flower--small flower--inline-block" src="img/burgFlower.svg" alt="flower">
-              <p class="">As I streamed media, browsed websites, and interacted with apps.</p>
-              </div>
-              <p>Until I pursued knowledge and escaped the loop of curiosity.</p>
-              <p>I'm Emily, and I'm a Software Developer.</p>
+
+              <p>Until I studied computer science and escaped the loop of curiosity.</p>
           </div>
         </div>
 
@@ -84,9 +99,9 @@
               <span>&ndash; Duluth, Minnesota</span>
               <p></p>Computer Information Systems, B.A.</p>
               <p>Graduated May 2020</p>
-              <div class="about__flex"> 
-              <img class="flower--small flower--inline-block" src="img/burgFlower.svg" alt="flower">
-              <p>GPA &ndash; 4.0</p>
+              <div class="about__flex">
+                <img class="flower--small flower--inline-block" src="img/burgFlower.svg" alt="flower">
+                <p>GPA &ndash; 4.0</p>
               </div>
             </div>
 
@@ -94,7 +109,7 @@
               <!-- <img class="about-wrapper__vine-image school-flower" src="img/burgFlower.svg" alt="burgandy flower"> -->
               <h4 class="about__school-title">Winona State University</h4>
               <span>&ndash; Winona, Minnesota</span>
-             
+
               <p>Psychology, B.A.</p>
               <p>Graduated December 2011</p>
             </div>
@@ -231,7 +246,7 @@
       <h2 class="heading algorithms__heading">Algorithms</h2>
       <div class="container content-container">
         <h3>FizzBuzz</h3>
-
+        <!-- 
         <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="js,result" data-user="escott2"
           data-slug-hash="NWNEYjJ" data-preview="true"
           style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
@@ -240,10 +255,10 @@
               FizzBuzz</a> by escott2 (<a href="https://codepen.io/escott2">@escott2</a>)
             on <a href="https://codepen.io">CodePen</a>.</span>
         </p>
-        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script> -->
 
         <h3>Reversing a String</h3>
-        <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="js,result" data-user="escott2"
+        <!-- <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="js,result" data-user="escott2"
           data-slug-hash="YzqdNje" data-preview="true"
           style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
           data-pen-title="Reversing a String">
@@ -251,11 +266,11 @@
               Reversing a String</a> by escott2 (<a href="https://codepen.io/escott2">@escott2</a>)
             on <a href="https://codepen.io">CodePen</a>.</span>
         </p>
-        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script> -->
 
         <h3>Palindrome</h3>
 
-        <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="js,result" data-user="escott2"
+        <!-- <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="js,result" data-user="escott2"
           data-slug-hash="qBZLrmY" data-preview="true"
           style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
           data-pen-title="Palindrome Checker">
@@ -263,10 +278,10 @@
               Palindrome Checker</a> by escott2 (<a href="https://codepen.io/escott2">@escott2</a>)
             on <a href="https://codepen.io">CodePen</a>.</span>
         </p>
-        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script> -->
 
         <h3>Fibonacci Sequence</h3>
-        <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="js,result" data-user="escott2"
+        <!-- <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="js,result" data-user="escott2"
           data-slug-hash="JjXxLMG" data-preview="true"
           style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
           data-pen-title="Fibonacci">
@@ -274,7 +289,7 @@
               Fibonacci</a> by escott2 (<a href="https://codepen.io/escott2">@escott2</a>)
             on <a href="https://codepen.io">CodePen</a>.</span>
         </p>
-        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script> -->
       </div>
     </section>
 
@@ -292,7 +307,9 @@
           <p>Mobile-first Approach</p>
         </div>
         <div class="projects__project-wrapper">
-          <a href="https://escott2.github.io/TheBatchBakery/" target="_blank"><h3>The Batch Bakery</h3></a>
+          <a href="https://escott2.github.io/TheBatchBakery/" target="_blank">
+            <h3>The Batch Bakery</h3>
+          </a>
           <h4>Created with:</h4>
           <p>Bootstrap</p>
           <p>JavaScript</p>
@@ -373,7 +390,7 @@
 
   </footer>
 
-  <script src="scripts.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>

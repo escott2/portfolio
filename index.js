@@ -1,5 +1,5 @@
-const flowerHeadingTop = document.querySelector(".js-generate-flowers--top");
-const flowerHeadingBottom = document.querySelector(".js-generate-flowers--bottom");
+const flowerHeader = document.querySelector(".js-generate-flowers--header");
+const flowerSection = document.querySelector(".js-generate-flowers--section");
 
 
 let flowerSVG = `
@@ -38,8 +38,8 @@ let leafSVG = `
 // EVENT LISTENERS ****************************
 
 window.addEventListener('load', () => {
-    generateFlowers(10, flowerHeadingTop);
-    // generateFlowers(5, flowerHeadingBottom);
+    generateFlowers(10, flowerHeader);
+    generateFlowers(2, flowerSection);
 
 });
 

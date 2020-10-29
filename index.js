@@ -1,5 +1,5 @@
 const flowerHeader = document.querySelector(".js-generate-flowers--header");
-const flowerSection = document.querySelector(".js-generate-flowers--section");
+const flowerSection = document.querySelectorAll(".js-generate-flowers--section");
 
 
 let flowerSVG = `
@@ -20,26 +20,14 @@ let leafSVG = `
 `
 
 
-
-// `
-//     <svg width="20" height="40" viewBox="0 0 118 230" fill="none" xmlns="http://www.w3.org/2000/svg">
-//     <path d="M3 98C3 172 60 226 60 226C60 226 115 173 115 98C115 23 60 3 60 3C60 3 3 24 3 98Z" fill="#153337" stroke="black" stroke-width="5"/>
-//     <line x1="61" y1="225.014" x2="60" y2="4.01357" stroke="black" stroke-width="6"/>
-//     <line x1="59.423" y1="126.055" x2="33.423" y2="144.055" stroke="black" stroke-width="5"/>
-//     <line y1="-2.5" x2="31.6228" y2="-2.5" transform="matrix(0.822192 0.56921 0.56921 -0.822192 63 124)" stroke="black" stroke-width="5"/>
-//     <line y1="-2.5" x2="31.6228" y2="-2.5" transform="matrix(0.822192 0.56921 0.56921 -0.822192 63 70)" stroke="black" stroke-width="5"/>
-//     <line x1="60.423" y1="72.0555" x2="34.423" y2="90.0555" stroke="black" stroke-width="5"/>
-//     </svg>
-// `
-
-
-
-
 // EVENT LISTENERS ****************************
 
 window.addEventListener('load', () => {
     generateFlowers(10, flowerHeader);
-    generateFlowers(2, flowerSection);
+    
+    for (let i = 0; i < flowerSection.length; i++) {
+     generateFlowers(2, flowerSection[i]);
+    }
 
 });
 

@@ -131,12 +131,6 @@ h4 {
   text-align: center;
 }
 
-.flower-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 6%;
-}
-
 /* ---- 3.2 Navigation ---- */
 
 .nav {
@@ -154,8 +148,10 @@ h4 {
 .nav__item {
   display: flex;
   justify-content: center;
-  /* background-color:#2d565b; */
-  background-color: rgba(45, 86, 91, 0.5);
+  /* background-color: rgba(45, 86, 91, 0.5); */
+  background-color: rgba(45, 86, 91, 0.3);
+
+
   border: 0.2em solid #153337;
   border-radius: 50px;
   margin-top: 2em;
@@ -163,7 +159,6 @@ h4 {
 }
 
 .nav a {
-  /* color: white; */
   color: inherit;
   padding: 0.75em 5em;
 }
@@ -175,16 +170,10 @@ h4 {
   color: white;
 }
 
-/* .nav a:hover {
-  background-color: #153337;
-  color: white;
-} */
-
 /* ---- 3.3 Main ---- */
 
 main {
-  background-color: rgba(204, 204, 204, 0.1);
-
+  background-color: rgba(204, 204, 204, 0.2);
 }
 
 .container {
@@ -203,9 +192,9 @@ main {
   text-align: center;
   padding: 0.5em;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
-  border-radius: 100px 100px 0px 0px;
+  /* border-radius: 100px 100px 100px 100px; */
 }
 
 .sub-heading {
@@ -227,29 +216,17 @@ main {
 .about__flower-wrapper {
   margin: 2em auto;
   text-align: center;
-  /* background-color: black; */
-  /* background-color: #2d565b; */
-  /* padding: 1em; */
-  /* margin: 0 auto; */
   width: 300px;
   height: 40px;
   overflow: hidden;
-  /* margin-left: -40px; */
 }
 
-.flower-flex {
-  display: flex;
-  justify-content: center;
-  flex-shrink: 0;
-  /* align-items: center; */
-}
-
-.about__main-wrapper {
-  position: relative;
+.main-wrapper--dark-blue {
   margin-bottom: 2em;
   border-left: 0.8em solid #153337;
   border-right: 0.8em solid #153337;
-  background-color: rgba(204, 204, 204, 0.1);
+  border-bottom: 0.8em solid #153337;
+  background-color: white;
 }
 
 .about__heading {
@@ -258,26 +235,13 @@ main {
   margin: 1em auto 0.5em;
 }
 
-.about__intro-wrapper {
-  position: relative;
+
+.line-height {
+  line-height: 2em;
 }
 
-.about__curiosity-loop {
-  width: 75%;
-  margin: 0 auto;
-  padding: 0.5em 1em;
-}
-
-.loop--offset-1 {
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%235C322DFF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
-}
-
-.loop--offset-2 {
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%235C322DFF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='10' stroke-linecap='square'/%3e%3c/svg%3e");
-}
 
 /* probably should take off font-family & color, could also abstract text from about section. More reusable. */
-
 
 .about__text--large {
   font-weight: 400;
@@ -303,14 +267,10 @@ main {
   position: relative;
 }
 
-.about__education-wrapper .content-container {
-  width: 100%;
-}
-
 .about__school-wrapper {
-  background-color: white;
-  border: 0.5em solid #2d565b;
-  width: 100%;
+  border-left: 1em solid #2d565b;  
+  border-top: 1em solid #442522;  
+  width: 90%;
   height: auto;
   padding: 2em 1em;
   margin-bottom: 1em;
@@ -319,13 +279,19 @@ main {
   flex-shrink: 0;
 }
 
+/* .light-background {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  padding: 2em 2em;
+} */
+
 .about__school-title {
   display: inline-block;
 }
 
 .about__flex {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -448,7 +414,13 @@ main {
   border-radius: 200px;
 }
 
-.algorithms {
+
+
+.main-wrapper--light-blue {
+  margin-bottom: 2em;
+  border-left: 0.8em solid #2d565b;
+  border-right: 0.8em solid #2d565b;
+  border-bottom: 0.8em solid #2d565b;
   background-color: white;
 }
 
@@ -465,8 +437,6 @@ main {
 .projects__heading {
   background-color: #153337;
   color: white;
-  margin-top: 2em;
-
 }
 
 .contact__form-wrapper {
@@ -476,9 +446,8 @@ main {
 }
 
 .contact__heading {
-  background-color: #5c322d;
+  background-color: #2d565b;
   color: white;
-  margin-top: 2em;
 }
 
 /* ---- 3.4 Footer ---- */
@@ -488,7 +457,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   height: 22vh;
-  background-color: #2d565b;
+  background-color: #153337;
   color: white;
 }
 
@@ -533,6 +502,25 @@ main {
 ==================================== */
 
 /* ---- 4.1 Buttons ---- */
+
+.scroll-to-top-btn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  border-color: black;
+  background-color: white;
+  box-shadow: 2px 5px 10px rgb(0, 0, 0, 0.4);
+  outline: none;
+  cursor: pointer;
+}
+
+.scroll-to-top-btn:active {
+  background-color: #5c322d;
+
+}
 
 /* ================================= 
   || 5. Media Queries
@@ -620,18 +608,22 @@ main {
     border-right: 0;
   }
 
+  .heading {
+    width: 90%;
+  }
+
   .about-wrapper__heading {
     padding-bottom: 0.75em;
   }
 
   .about__school-wrapper {
-
     padding-left: 2em;
+    width: 60%;
   }
 
-  .about__education-wrapper .content-container {
+  /* .about__education-wrapper .content-container {
     width: 90%;
-  }
+  } */
 
   .timeline-wrapper {
     height: 600px;

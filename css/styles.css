@@ -131,12 +131,6 @@ h4 {
   text-align: center;
 }
 
-.flower-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 6%;
-}
-
 /* ---- 3.2 Navigation ---- */
 
 .nav {
@@ -237,19 +231,13 @@ main {
   /* margin-left: -40px; */
 }
 
-.flower-flex {
-  display: flex;
-  justify-content: center;
-  flex-shrink: 0;
-  /* align-items: center; */
-}
-
 .about__main-wrapper {
   position: relative;
   margin-bottom: 2em;
   border-left: 0.8em solid #153337;
   border-right: 0.8em solid #153337;
-  background-color: rgba(204, 204, 204, 0.1);
+  /* background-color: rgba(204, 204, 204, 0.1); */
+  background-color: white;
 }
 
 .about__heading {
@@ -257,10 +245,10 @@ main {
   color: white;
   margin: 1em auto 0.5em;
 }
-
+/* 
 .about__intro-wrapper {
-  position: relative;
-}
+  background-color: white;
+} */
 
 .about__curiosity-loop {
   width: 75%;

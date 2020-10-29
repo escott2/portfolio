@@ -1,5 +1,6 @@
 const flowerHeader = document.querySelector(".js-generate-flowers--header");
 const flowerSection = document.querySelectorAll(".js-generate-flowers--section");
+const scrollToTopBtn = document.querySelector(".js-scroll-to-top");
 
 
 let flowerSVG = `
@@ -24,12 +25,16 @@ let leafSVG = `
 
 window.addEventListener('load', () => {
     generateFlowers(10, flowerHeader);
-    
+
     for (let i = 0; i < flowerSection.length; i++) {
      generateFlowers(2, flowerSection[i]);
     }
-
 });
+
+scrollToTopBtn.addEventListener('click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+} )
 
 
 
@@ -42,7 +47,7 @@ function generateFlowers(number, location) {
     let html = "";
 
     for (let i = 0; i < number; i++) {
-        uniqueFlowerSVG = flowerSVG.replaceAll("5C322D", "2d565b");
+        uniqueFlowerSVG = flowerSVG.replaceAll("5C322D", "442522");
         html += uniqueFlowerSVG;
         for (let y = 0; y < 1; y++) {
             uniqueLeafSVG = leafSVG.replaceAll("153337", "153337")

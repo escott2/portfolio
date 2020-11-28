@@ -214,9 +214,11 @@ main {
 
 /* ------------- 3.3.1 About ---- */
 .about__flower-wrapper {
-  margin: 2em auto;
+  margin: 1em auto;
   text-align: center;
-  width: 300px;
+  /* width: 300px; */
+  width: 100vw;
+  max-width: 1200px;
   height: 40px;
   overflow: hidden;
 }
@@ -414,8 +416,6 @@ main {
   border-radius: 200px;
 }
 
-
-
 .main-wrapper--light-blue {
   margin-bottom: 2em;
   border-left: 0.8em solid #2d565b;
@@ -546,7 +546,7 @@ main {
   }
 
   .about__flower-wrapper {
-    width: 600px;
+    /* width: 600px; */
   }
 
 
@@ -560,7 +560,7 @@ main {
   }
 
   .container {
-    width: 90%;
+    width: 100%;
   }
 
   .content-container {
@@ -591,7 +591,7 @@ main {
   .nav__item {
     border: 0;
     border-radius: 0px;
-    width: 22%;
+    width: 25%;
     margin-right: 0px;
     margin-top: 2em;
   }
@@ -608,9 +608,9 @@ main {
     border-right: 0;
   }
 
-  .heading {
+  /* .heading {
     width: 90%;
-  }
+  } */
 
   .about-wrapper__heading {
     padding-bottom: 0.75em;
@@ -671,7 +671,7 @@ main {
 @media (min-width: 1025px) {
   
   .about__flower-wrapper {
-    width: 1000px;
+    /* width: 1000px; */
 
   }
 

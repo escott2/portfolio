@@ -1,6 +1,13 @@
 const flowerHeader = document.querySelector(".js-generate-flowers--header");
 const flowerSection = document.querySelectorAll(".js-generate-flowers--section");
 const scrollToTopBtn = document.querySelector(".js-scroll-to-top");
+const verticalFlowerWrapper = document.querySelector(".vertical-wrapper");
+
+const flowerVerticalLeft = document.createElement("div");
+flowerVerticalLeft.className = "vertical-flower-wrapper";
+
+const flowerVerticalRight = document.createElement("div");
+flowerVerticalRight.classList.add("vertical-flower-wrapper", "vertical-flower-wrapper--right");
 
 
 // let flowerSVG = `
@@ -41,6 +48,10 @@ let leafSVG = `
 
 window.addEventListener('load', () => {
     generateFlowers(20, flowerHeader);
+    // verticalFlowerWrapper.appendChild(flowerVerticalLeft);
+    // generateFlowers(10, flowerVerticalLeft);
+    // verticalFlowerWrapper.appendChild(flowerVerticalRight);
+    // generateFlowers(10, flowerVerticalRight);
 
     for (let i = 0; i < flowerSection.length; i++) {
      generateFlowers(2, flowerSection[i]);

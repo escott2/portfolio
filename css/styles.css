@@ -149,7 +149,8 @@ h4 {
   display: flex;
   justify-content: center;
   /* background-color: rgba(45, 86, 91, 0.5); */
-  background-color: rgba(45, 86, 91, 0.3);
+  /* background-color: rgba(45, 86, 91, 0.3); */
+  background-color: rgb(204, 204, 204);
 
 
   border: 0.2em solid #153337;
@@ -185,7 +186,7 @@ main {
 .content-container {
   width: 90%;
   margin: 0 auto;
-  margin-top: 1em;
+  padding: 2em;
 }
 
 .heading {
@@ -198,14 +199,13 @@ main {
 }
 
 .sub-heading {
-  background-color: rgba(45, 86, 91, 0.3);
-  /* border-top: 0.15em solid black;
-  border-bottom: 0.15em solid black; */
-  padding: 0.5em 0 0.5em 2em;
-  /* text-align: center; */
-  width: 95%;
-  /* margin: 0 auto; */
-  color: black;
+  margin: 0;
+  background-color: #442522;
+  padding: 0.5em 0;
+  color: white;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .margin-left {
@@ -217,29 +217,72 @@ main {
   margin: 1em auto;
   text-align: center;
   /* width: 300px; */
-  width: 100vw;
+  width: 99vw;
   max-width: 1200px;
   height: 40px;
   overflow: hidden;
+  /* position: relative; */
 }
+
+.vertical-wrapper {
+  width: 99vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.vertical-flower-wrapper {
+  /* height: 220px; */
+  height: 75px;
+  width: 40px;
+  /* background-color: red; */
+  z-index: 1;
+  position: absolute;
+  top: 40px;
+  /* top: 0; */
+  overflow: hidden;
+  left: -6px;
+}
+
+
 
 .main-wrapper--dark-blue {
   margin-bottom: 2em;
-  border-left: 0.8em solid #153337;
-  border-right: 0.8em solid #153337;
-  border-bottom: 0.8em solid #153337;
+  border-left: 0.2em solid #153337;
+  border-right: 0.2em solid #153337;
+  border-bottom: 0.2em solid #153337;
   background-color: white;
 }
 
 .about__heading {
   background-color: #153337;
   color: white;
-  margin: 1em auto 0.5em;
+  margin-top: 1em;
+  border-top: .5em solid #442522;
 }
-
 
 .line-height {
   line-height: 2em;
+}
+
+.about__intro {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.about__photo {
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  background-color: rgb(204, 204, 204);
+}
+
+.intro-content {
+  width: 100%;
+  margin: 0;
 }
 
 
@@ -265,20 +308,22 @@ main {
 }
 
 .about__education-wrapper {
-  margin-top: 2em;
+  /* margin-top: 2em; */
   position: relative;
 }
 
 .about__school-wrapper {
-  border-left: 1em solid #2d565b;  
-  border-top: 1em solid #442522;  
+  border-left: 1em solid rgb(204, 204, 204);
+  border-bottom: 1em solid rgb(204, 204, 204);
+
   width: 90%;
   height: auto;
   padding: 2em 1em;
-  margin-bottom: 1em;
+  margin: 1em;
   line-height: 20px;
   color: black;
   flex-shrink: 0;
+  /* text-align: center; */
 }
 
 /* .light-background {
@@ -306,8 +351,7 @@ main {
   height: 400px;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #153337;
-  margin: 1em;
+  background-color: rgb(204, 204, 204);
 }
 
 .timeline {
@@ -367,21 +411,23 @@ main {
 }
 
 .timeline__content-wrapper {
-  background-color: white;
-
+  background-color: #153337;
   padding: 10px;
   border-radius: 6px;
+  /* color: white; */
 }
 
 .timeline__content--date {
   font-weight: 600;
   text-align: center;
+  color: white;
+  padding: 0.5em;
 }
 
 .timeline__content {
   padding: 20px 30px;
   margin-top: 10px;
-  background-color: rgba(45, 86, 91, 0.3);
+  background-color: white;
   position: relative;
   border-radius: 6px;
 }
@@ -551,29 +597,22 @@ main {
 
 
   header {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; */
     margin-top: 2%;
-
   }
 
   .container {
     width: 100%;
   }
 
-  .content-container {
+  /* .content-container {
     width: 80%;
-
-  }
+  } */
 
   .title-wrapper {
     margin: 0;
   }
 
   .title-wrapper__heading {
-    /* padding-left: 1em; */
     margin: 0;
   }
 
@@ -608,21 +647,14 @@ main {
     border-right: 0;
   }
 
-  /* .heading {
-    width: 90%;
-  } */
-
   .about-wrapper__heading {
     padding-bottom: 0.75em;
   }
 
-  .about__school-wrapper {
+  /* .about__school-wrapper {
     padding-left: 2em;
-    width: 60%;
-  }
-
-  /* .about__education-wrapper .content-container {
-    width: 90%;
+    width: 350px;
+    height: 302px;
   } */
 
   .timeline-wrapper {
@@ -666,7 +698,35 @@ main {
   }
 }
 
-@media (min-width: 796px) {}
+@media (min-width: 796px) {
+  
+  .main-wrapper--dark-blue {
+    border-left: 0.8em solid #153337;
+    border-right: 0.8em solid #153337;
+    border-bottom: 0.8em solid #153337;
+  }
+
+  .about__intro {
+    flex-direction: row;
+}
+
+.intro-content {
+  width: 60%;
+}
+
+.about__flex {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about__school-wrapper {
+  padding-left: 2em;
+  width: 350px;
+  height: 302px;
+
+}
+
+}
 
 @media (min-width: 1025px) {
   
@@ -674,7 +734,6 @@ main {
     /* width: 1000px; */
 
   }
-
 
   header {
     margin-top: 0;

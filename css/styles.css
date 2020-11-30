@@ -64,7 +64,8 @@ a:hover {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Playfair Display", serif;
   font-weight: 600;
 }
@@ -86,42 +87,12 @@ h3 {
 }
 
 h4 {
-  font-family: "Playfair Display", serif;
   margin: 0;
-}
-
-.center-content {
-  text-align: center;
-}
-
-.indent-content {
-  padding-left: 2rem;
-}
-
-.bold-content {
-  font-weight: 600;
-}
-
-.accent-orange-content {
-  color: #5c322d;
-}
-
-.accent-blue-content {
-  color: #2d565b;
-}
-
-.sans-content {
-  font-family: "Open Sans", sans-serif;
-}
-
-.inline-block {
-  display: inline-block;
 }
 
 /* ================================= 
   || 3. Layout
 ==================================== */
-
 
 /* ---- 3.1 Header ---- */
 
@@ -148,11 +119,7 @@ h4 {
 .nav__item {
   display: flex;
   justify-content: center;
-  /* background-color: rgba(45, 86, 91, 0.5); */
-  /* background-color: rgba(45, 86, 91, 0.3); */
   background-color: rgb(204, 204, 204);
-
-
   border: 0.2em solid #153337;
   border-radius: 50px;
   margin-top: 2em;
@@ -278,11 +245,13 @@ main {
   height: 225px;
   border-radius: 50%;
   background-color: rgb(204, 204, 204);
+  margin: 1em;
 }
 
 .intro-content {
   width: 100%;
   margin: 0;
+  text-align: justify;
 }
 
 
@@ -352,6 +321,7 @@ main {
   overflow-x: hidden;
   overflow-y: auto;
   background-color: rgb(204, 204, 204);
+  padding: 0;
 }
 
 .timeline {
@@ -476,6 +446,17 @@ main {
   margin: 0 auto;
 }
 
+.algorithm__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.algorithm__item {
+  background-color: rgb(204, 204, 204);
+}
+
 .projects {
   background-color: white;
 }
@@ -565,24 +546,14 @@ main {
 
 .scroll-to-top-btn:active {
   background-color: #5c322d;
-
 }
 
 /* ================================= 
   || 5. Media Queries
 ==================================== */
-/* @media (min-width: 380px) {
-  .leaf {
-    width: 8%;
-    transform: translateX(-64%);
-  }
-
-  .leaf--first {
-    top: 20%;
-  }
-} */
 
 @media (min-width: 600px) {
+
   h1 {
     font-size: 60px;
   }
@@ -591,11 +562,6 @@ main {
     font-size: 18px;
   }
 
-  .about__flower-wrapper {
-    /* width: 600px; */
-  }
-
-
   header {
     margin-top: 2%;
   }
@@ -603,10 +569,6 @@ main {
   .container {
     width: 100%;
   }
-
-  /* .content-container {
-    width: 80%;
-  } */
 
   .title-wrapper {
     margin: 0;
@@ -651,14 +613,9 @@ main {
     padding-bottom: 0.75em;
   }
 
-  /* .about__school-wrapper {
-    padding-left: 2em;
-    width: 350px;
-    height: 302px;
-  } */
-
   .timeline-wrapper {
     height: 600px;
+    padding: 0.5em;
   }
 
   .timeline::after {
@@ -723,17 +680,15 @@ main {
   padding-left: 2em;
   width: 350px;
   height: 302px;
+}
 
+.algorithm__grid {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 }
 
 @media (min-width: 1025px) {
-  
-  .about__flower-wrapper {
-    /* width: 1000px; */
-
-  }
 
   header {
     margin-top: 0;

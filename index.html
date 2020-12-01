@@ -242,28 +242,26 @@
       <h2 class="heading projects__heading">Projects</h2>
       <div class="main-wrapper--dark-blue container">
         <div class="content-container">
-          <form>
+          <form class="project__select">
             <label for="technology-select">Created with:</label>
             <select name="technology" id="technology-select">
+              <option>Native JavaScript</option>
+              <option>Bootstrap</option>
+              <option>Mobile First Design</option>
+              <option>React</option>
+            </select>
           </form>
-            <option>Native JavaScript</option>
-            <option>Bootstrap</option>
-            <option>Mobile First Design</option>
-            <option>React</option>
-          </select>
         <!-- <p>Select technologies used - Vanilla Dev, Bootstrap, React</p> -->
-        <div class="projects__project-wrapper">
-          <h3>Personal Portfolio</h3>
-          <h4>Created with:</h4>
-          <p>Vanilla HTML, CSS</p>
-          <p>Naming convention: BEM</p>
-          <p>Flexbox</p>
-          <p>Responsive Design</p>
-          <p>Mobile-first Approach</p>
+        <h3 class="project-name">Personal Portfolio</h3>
+        <div class="projects__project-wrapper native-js mobile-first">
+          <img src="img/portfolio-thumbnail.png" class="project__thumbnail">
+          <div class="project-content">
+            <p>You are looking at it. This website was created with native HTML, CSS, and JavaScript. Project's goal. What I learned.</p>
+          </div>
         </div>
+        <h3 class="project-name">The Batch Bakery</h3>
         <div class="projects__project-wrapper">
           <a href="https://escott2.github.io/TheBatchBakery/" target="_blank">
-            <h3>The Batch Bakery</h3>
           </a>
           <h4>Created with:</h4>
           <p>Bootstrap</p>
@@ -321,6 +319,9 @@
       </div>
       </div>
     </section>
+
+    <div class="about__flower-wrapper js-generate-flowers--section">
+    </div>
 
     <button class="scroll-to-top-btn js-scroll-to-top">
       <i class="material-icons">

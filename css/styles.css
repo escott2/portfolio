@@ -497,10 +497,9 @@ main {
 }
 
 .project-content {
-  width: 400px;
-  margin: 1em;
+  /* width: 400px; */
+  /* margin-top: 1em; */
   text-align: justify;
-
 }
 
 .projects {
@@ -755,6 +754,15 @@ main {
   justify-content: space-evenly;
 }
 
+.project__thumbnail {
+  width: 250px;
+}
+
+.project-content {
+  margin-top: 1em;
+  width: 350px;
+}
+
 }
 
 @media (min-width: 1025px) {
@@ -765,5 +773,9 @@ main {
 
   .nav-button {
     margin: 3% 0;
+  }
+
+  .project__thumbnail {
+    width:350px;
   }
 }

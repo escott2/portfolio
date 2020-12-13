@@ -7,12 +7,12 @@
   <title>Portfolio</title>
 
   <link rel="stylesheet" href="css/normalize.css" />
+  <script src="https://kit.fontawesome.com/4b3b1ff6ef.js" crossorigin="anonymous"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap"
     rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-
   <link rel="stylesheet" href="css/styles.css" />
 
 </head>
@@ -57,7 +57,9 @@
         <div>
           <!-- <h3 class="sub-heading">Introduction</h3> -->
           <div class="content-container about__intro line-height">
-            <div class="about__photo"></div>
+            <div class="about__photo-container">
+              <img class="personal-photo" src="img/personal-photo.jpg" alt="personal photo">
+            </div>
             <p class="intro-content">
               Hello. My name is Emily Scott and I am a software developer. I have two bachelor degrees and a passion for programming.
               Programming engages my mind in a variety of ways as I create, problem-solve, and continually learn.
@@ -252,20 +254,28 @@
             </select>
           </form>
         <!-- <p>Select technologies used - Vanilla Dev, Bootstrap, React</p> -->
-        <h3 class="project-name">Personal Portfolio</h3>
+        <h3 class="project-title">Personal Portfolio</h3>
         <div class="projects__project-wrapper native-js mobile-first">
-          <img src="img/portfolio-thumbnail.png" class="project__thumbnail">
+          <img src="img/portfolio-thumbnail.png" class="project__thumbnail portfolio-thumbnail">
           <div class="project-content">
-            <p>You are looking at it. This website was created with native HTML, CSS, and JavaScript. Project's goal. What I learned.</p>
+            <p>The goal of this project was to provide information about myself and my portfolio work. This website was created with native HTML, CSS, and JavaScript. Click the icon below to view the GitHub repo for this project.</p>
+            <a href="https://github.com/escott2/portfolio.git" target="_blank">
+              <i class="fab fa-github fa-3x"></i>
+            </a>
           </div>
         </div>
-        <h3 class="project-name">The Batch Bakery</h3>
+        <h3 class="project-title">The Batch Bakery</h3>
         <div class="projects__project-wrapper">
           <a href="https://escott2.github.io/TheBatchBakery/" target="_blank">
+            <img src="img/batch-thumbnail.png" class="project__thumbnail">
           </a>
-          <h4>Created with:</h4>
-          <p>Bootstrap</p>
-          <p>JavaScript</p>
+          <div class="project-content">
+            <p>The goal of this project was to create a website for a fictional bakery, looking to create an online presence and sell product online. This website was created with native HTML, JavaScript, and Bootstrap. Click the icon below to view the GitHub repo for this project.</p>
+            <a href="https://github.com/escott2/TheBatchBakery.git" target="_blank">
+              <i class="fab fa-github fa-3x"></i>
+            </a>
+
+          </div>
         </div>
         <!-- <div class="projects__project-wrapper">
           <h3>Project #3</h3>

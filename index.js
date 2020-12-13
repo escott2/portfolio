@@ -1,3 +1,6 @@
+const navToggleBtn = document.querySelector(".js-nav-toggle");
+const nav = document.querySelector(".js-nav");
+
 const flowerHeader = document.querySelector(".js-generate-flowers--header");
 const flowerSection = document.querySelectorAll(".js-generate-flowers--section");
 const scrollToTopBtn = document.querySelector(".js-scroll-to-top");
@@ -48,14 +51,17 @@ let leafSVG = `
 
 window.addEventListener('load', () => {
     generateFlowers(20, flowerHeader);
-    // verticalFlowerWrapper.appendChild(flowerVerticalLeft);
-    // generateFlowers(10, flowerVerticalLeft);
-    // verticalFlowerWrapper.appendChild(flowerVerticalRight);
-    // generateFlowers(10, flowerVerticalRight);
 
     for (let i = 0; i < flowerSection.length; i++) {
      generateFlowers(2, flowerSection[i]);
     }
+});
+
+navToggleBtn.addEventListener("click", () => {
+    console.log("clicked");
+    nav.style.display === "flex" ? nav.style.display = "none" : nav.style.display = "flex";
+
+
 });
 
 scrollToTopBtn.addEventListener('click', () => {
@@ -84,10 +90,7 @@ function generateFlowers(number, location) {
     }
 
     location.innerHTML = html;
-
 }
 
-function flowerCurve() {
 
-}
 

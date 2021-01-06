@@ -114,7 +114,7 @@ h4 {
   padding-left: .5em;
   font-family: "Playfair Display", serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .logo {
@@ -133,7 +133,9 @@ nav {
 .nav-toggle {
   border: none;
   background-color: white;
-  width: 42px;
+  width: 50px;
+  height:50px;
+  margin-left: 0.5em;
 }
 
 .nav-toggle:hover {
@@ -143,7 +145,6 @@ nav {
 .nav-toggle img {
   width: 100%;
   height: auto;
-  margin-top: 5px;
 }
 
 .nav {
@@ -164,6 +165,7 @@ nav {
   background-color: rgb(231,234,235);
   width: 72%;
   z-index: 2;
+  border-left: 1em solid #5C322D;
 }
 
 
@@ -176,7 +178,7 @@ nav {
 /* Fix UI issue: Problem, background color changes when hovering over an unclickable space within nav-item.
     Fix with JS - when hovering over .nav a, turn nav-item background darker color.  */
 .nav__item:hover {
-  background-color: #153337;
+  background-color: black;
   color: white;
 }
 
@@ -284,12 +286,12 @@ main {
 
 .about__photo-container {
   width: 225px;
-  height: 225px;
-  border-radius: 50%;
+  height: 260px;
+  /* border-radius: 50%; */
   background-color: rgb(231,234,235);
 
   /* background-color: rgb(221, 221, 221); */
-  margin: 1em;
+  margin: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -298,7 +300,7 @@ main {
 .personal-photo {
   width: 200px;
   height: auto;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 
 }
 
@@ -584,14 +586,16 @@ main {
   color: white;
 }
 
-.footer__flex {
+.footer__content {
   width: 90%;
+  /* max-width: 1200px; */
   margin: 0 auto;
 }
 
 .footer__nav {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer__nav a {
@@ -773,8 +777,9 @@ main {
     left: -13px;
   }
 
-  .footer__flex {
+  .footer__content {
     display: flex;
+    /* flex-direction: row; */
     align-items: center;
     justify-content: space-between;
   }

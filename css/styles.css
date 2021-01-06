@@ -63,6 +63,14 @@ a:hover {
   text-decoration: underline;
 }
 
+.nav__display-none {
+  display: none;
+}
+
+.nav__display-flex {
+  display: flex;
+}
+
 /* ================================= 
   || 2. Typography
 ==================================== */
@@ -124,7 +132,7 @@ h4 {
 
 /* ---- 3.2 Navigation ---- */
 
-nav {  
+nav {
   /* background-color:rgb(231,234,235); */
   /* border: 0.2em solid #153337; */
   height: 50px;
@@ -134,7 +142,7 @@ nav {
   border: none;
   background-color: white;
   width: 50px;
-  height:50px;
+  height: 50px;
   margin-left: 0.5em;
 }
 
@@ -143,12 +151,12 @@ nav {
 }
 
 .nav-toggle img {
-  width: 100%;
-  height: auto;
+  width: 40px;
+  height: 40px;
 }
 
 .nav {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -156,36 +164,38 @@ nav {
   width: 100%;
   padding: 0;
   list-style: none;
-  display: none;
+  /* display: none; */
 }
 
 .nav__item {
   display: flex;
   justify-content: center;
-  background-color: rgb(231,234,235);
+  background-color: rgb(231, 234, 235);
   width: 72%;
   z-index: 2;
-  border-left: 1em solid #5C322D;
+  border-left: 1em solid #2D565B;
 }
 
 
 
 .nav a {
   color: inherit;
-  padding: 0.75em 5em;
+  padding: 0.75em 0;
+  width: 100%;
+  text-align: center;
 }
 
 /* Fix UI issue: Problem, background color changes when hovering over an unclickable space within nav-item.
     Fix with JS - when hovering over .nav a, turn nav-item background darker color.  */
 .nav__item:hover {
-  background-color: black;
+  background-color: #2D565B;
   color: white;
 }
 
 /* ---- 3.3 Main ---- */
 
 main {
-  background-color: rgba(231,234,235, 0.2);
+  background-color: rgba(231, 234, 235, 0.2);
 }
 
 .container {
@@ -197,6 +207,7 @@ main {
 .content-container {
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 7em;
   padding: 0.5em;
 }
 
@@ -215,7 +226,7 @@ main {
   color: white;
   text-align: center;
   width: 90%;
-    margin: 0.5em auto 0;
+  margin: 0.5em auto 0;
 
   /* margin: 0 auto; */
 }
@@ -278,19 +289,16 @@ main {
 }
 
 .about__intro {
- display: flex;
- flex-direction: column;
- justify-content: space-around;
- align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .about__photo-container {
   width: 225px;
   height: 260px;
-  /* border-radius: 50%; */
-  background-color: rgb(231,234,235);
-
-  /* background-color: rgb(221, 221, 221); */
+  background-color: rgb(231, 234, 235);
   margin: 1.5em;
   display: flex;
   justify-content: center;
@@ -300,8 +308,6 @@ main {
 .personal-photo {
   width: 200px;
   height: auto;
-  /* border-radius: 50%; */
-
 }
 
 .intro-content {
@@ -333,14 +339,12 @@ main {
 }
 
 .about__education-wrapper {
-  /* margin-top: 2em; */
   position: relative;
 }
 
 .about__school-wrapper {
-  border-left: 1em solid rgb(231,234,235);
-  border-bottom: 1em solid rgb(231,234,235);
-
+  border-left: 1em solid rgb(231, 234, 235);
+  border-bottom: 1em solid rgb(231, 234, 235);
   width: 90%;
   height: auto;
   padding: 2em 1em;
@@ -348,35 +352,28 @@ main {
   line-height: 20px;
   color: black;
   flex-shrink: 0;
-  /* text-align: center; */
 }
-
-/* .light-background {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 50px;
-  padding: 2em 2em;
-} */
 
 .about__school-title {
   display: inline-block;
 }
 
-.about__flex {
+.school__flex {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 7em;
 }
 
-.about__flex .flower--small {
+.school__flex .flower--small {
   margin-right: 10px;
 }
-
 
 .timeline-wrapper {
   height: 400px;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: rgb(231,234,235);
+  background-color: rgb(231, 234, 235);
   padding: 0;
 }
 
@@ -511,7 +508,7 @@ main {
 
 .algorithm__item {
   color: black;
-  background-color: rgb(231,234,235);
+  background-color: rgb(231, 234, 235);
 }
 
 .project__select {
@@ -520,7 +517,7 @@ main {
 
 .project-title {
   text-align: center;
-  background-color: rgb(231,234,235);
+  background-color: rgb(231, 234, 235);
   margin: 0;
   padding: 1em;
 
@@ -555,7 +552,7 @@ main {
   width: 300px;
   padding: 0.5em;
   margin: 1em 0;
-  border: 0.5em solid rgb(231,234,235);
+  border: 0.5em solid rgb(231, 234, 235);
 }
 
 /* .portfolio-thumbnail::after {
@@ -588,7 +585,7 @@ main {
 
 .footer__content {
   width: 90%;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -631,24 +628,24 @@ main {
 /* ---- 4.1 Buttons ---- */
 
 .scroll-to-top-btn {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    outline: none;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 .scroll-to-top-btn img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    box-shadow: 2px 5px 10px rgb(0, 0, 0, 0.4);
-    background-color: white;
-    opacity: 0.7;
-    filter: alpha(opacity=50);
-    zoom: 1;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 2px 5px 10px rgb(0, 0, 0, 0.4);
+  background-color: white;
+  opacity: 0.7;
+  filter: alpha(opacity=50);
+  zoom: 1;
 }
 
 .scroll-to-top-btn img:active {
@@ -701,22 +698,26 @@ main {
   }
 
   nav {
-    border:none;
-    background-color: none;
-    height: auto;
-  }
-
-  .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: white;
     border: none;
+    background-color: none;
     height: auto;
   }
 
   .nav-toggle {
     display: none;
+  }
+
+  .nav__display-none {
+    display: flex;
+  }
+
+  .nav {
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    height: auto;
   }
 
   .nav__item {
@@ -730,13 +731,6 @@ main {
     padding: 0.75em 1.25em;
     border: 0;
   }
-/* 
-  .nav__item--border {
-    border-top: 0.22em solid #153337;
-    border-bottom: 0.22em solid #153337;
-    border-left: 0;
-    border-right: 0;
-  } */
 
   .about-wrapper__heading {
     padding-bottom: 0.75em;
@@ -790,7 +784,7 @@ main {
 }
 
 @media (min-width: 796px) {
-  
+
   .main-wrapper--dark-blue {
     border-left: 0.8em solid #153337;
     border-right: 0.8em solid #153337;
@@ -799,41 +793,41 @@ main {
 
   .about__intro {
     flex-direction: row;
-}
+  }
 
-.intro-content {
-  width: 60%;
-}
+  .intro-content {
+    width: 60%;
+  }
 
-.about__flex {
-  flex-direction: row;
-  justify-content: space-around;
-}
+  .school__flex {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-.about__school-wrapper {
-  padding-left: 2em;
-  width: 350px;
-  height: 302px;
-}
+  .about__school-wrapper {
+    padding-left: 2em;
+    width: 350px;
+    height: 302px;
+  }
 
-.algorithm__grid {
-  grid-template-columns: repeat(2, 1fr);
-  padding: 2em;
-}
+  .algorithm__grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2em;
+  }
 
-.projects__project-wrapper {
-  flex-direction: row;
-  justify-content: space-evenly;
-}
+  .projects__project-wrapper {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
-.project__thumbnail {
-  width: 250px;
-}
+  .project__thumbnail {
+    width: 250px;
+  }
 
-.project-content {
-  margin-top: 1em;
-  width: 350px;
-}
+  .project-content {
+    margin-top: 1em;
+    width: 350px;
+  }
 
 }
 
@@ -848,6 +842,6 @@ main {
   }
 
   .project__thumbnail {
-    width:350px;
+    width: 350px;
   }
 }

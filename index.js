@@ -1,6 +1,7 @@
 const navToggleBtn = document.querySelector(".js-nav-toggle");
 const nav = document.querySelector(".js-nav");
 
+
 const flowerHeader = document.querySelector(".js-generate-flowers--header");
 const flowerSection = document.querySelectorAll(".js-generate-flowers--section");
 const scrollToTopBtn = document.querySelector(".js-scroll-to-top");
@@ -35,12 +36,6 @@ let flowerSVG = `
     </svg>
 `
 
-// let leafSVG = `
-//     <svg width="20" height="40" viewBox="0 0 126 239" fill="none" xmlns="http://www.w3.org/2000/svg">
-//     <path d="M7 103C7 177 64 231 64 231C64 231 119 178 119 103C119 28 64 8 64 8C64 8 7 29 7 103Z" fill="#153337" stroke="black" stroke-width="14"/>
-//     </svg>
-// `
-
 let leafSVG = `
     <svg width="15" height="35" viewBox="0 0 126 239" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M7 103C7 177 64 231 64 231C64 231 119 178 119 103C119 28 64 8 64 8C64 8 7 29 7 103Z" fill="#153337" stroke="black" stroke-width="14"/>
@@ -60,8 +55,6 @@ window.addEventListener('load', () => {
 navToggleBtn.addEventListener("click", () => {
     console.log("clicked");
     nav.style.display === "flex" ? nav.style.display = "none" : nav.style.display = "flex";
-
-
 });
 
 scrollToTopBtn.addEventListener('click', () => {

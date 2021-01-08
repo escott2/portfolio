@@ -76,11 +76,14 @@ a:hover {
 ==================================== */
 
 h1,
-h2,
-h3,
-h4 {
+h2 {
   font-family: "Playfair Display", serif;
   font-weight: 600;
+}
+
+h3,
+h4 {
+  font-family: "Open Sans", sans-serif;
 }
 
 h1 {
@@ -95,11 +98,12 @@ h2 {
 h3 {
   font-size: 22px;
   letter-spacing: 2px;
-  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
 h4 {
   margin: 0;
+  font-weight: 400;
 }
 
 /* ================================= 
@@ -207,7 +211,7 @@ main {
 .content-container {
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 7em;
+  margin-bottom: 4em;
   padding: 0.5em;
 }
 
@@ -313,7 +317,7 @@ main {
 .intro-content {
   width: 100%;
   margin: 0;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 
@@ -441,7 +445,7 @@ main {
 }
 
 .timeline__content--date {
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
   color: white;
   padding: 0.5em;
@@ -533,12 +537,6 @@ main {
   background-color: white;
 }
 
-.project-content {
-  /* width: 400px; */
-  /* margin-top: 1em; */
-  text-align: justify;
-}
-
 .projects {
   background-color: white;
 }
@@ -555,11 +553,20 @@ main {
   border: 0.5em solid rgb(231, 234, 235);
 }
 
+.github-icon {
+  font-size: 35px;
+  color: #2D565B;
+}
+
 /* .portfolio-thumbnail::after {
   content: "Current Project";
   color: black;
   background-color: yellow;
 } */
+
+.contact {
+  text-align: center;
+}
 
 .contact__form-wrapper {
   border: 0.8em solid #153337;
@@ -572,21 +579,31 @@ main {
   color: white;
 }
 
+.contact__link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
 /* ---- 3.4 Footer ---- */
 
 .footer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  height: 22vh;
+  /* height: 25vh; */
   background-color: #153337;
   color: white;
+  padding: 1em 0;
 }
 
 .footer__content {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.footer__author-info {
+  text-align: center;
 }
 
 .footer__nav {
@@ -603,6 +620,22 @@ main {
 
 .footer__link {
   padding: 0.5em;
+}
+
+
+.footer__logo-wrapper {
+  width: 100px;
+  height: 100px;
+  padding: 1em;
+  margin: 0 auto;
+  margin-top: 1em;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.footer__logo {
+  width: 100%;
+  height: auto;
 }
 
 /* ---- 3.5 Page Elements ---- */
@@ -778,9 +811,14 @@ main {
     justify-content: space-between;
   }
 
-  /* .display-toggle {
-    display: inherit;
+  /* .footer__author-info {
+    margin: 0;
   } */
+
+  .footer__logo-wrapper {
+    margin: 0;
+  }
+
 }
 
 @media (min-width: 796px) {
@@ -839,6 +877,12 @@ main {
 
   .nav-button {
     margin: 3% 0;
+  }
+
+  .about__school-wrapper {
+    padding-left: 2em;
+    width: 450px;
+    height: 302px;
   }
 
   .project__thumbnail {

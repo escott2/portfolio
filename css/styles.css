@@ -551,6 +551,7 @@ main {
   padding: 0.5em;
   margin: 1em 0;
   border: 0.5em solid rgb(231, 234, 235);
+  background-color: white;
 }
 
 .github-icon {
@@ -802,6 +803,15 @@ main {
 
   .t-container--right::after {
     left: -13px;
+  }
+
+  .project__thumbnail:hover {
+    transition: border-color 0.5s, transform 0.5s;
+  }
+
+  .project__thumbnail:hover {
+    transform: scale(1.2);
+    border-color: #153337;
   }
 
   .footer__content {

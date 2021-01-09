@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Emily Scott's Portfolio</title>
+  <title>Emily Scott &#183; Developer</title>
   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
   <link rel="stylesheet" href="css/normalize.css" />
   <script src="https://kit.fontawesome.com/4b3b1ff6ef.js" crossorigin="anonymous"></script>
@@ -28,8 +28,8 @@
       </div>
     </div>
     <!-- <div class=vertical-wrapper> -->
-      <div class="about__flower-wrapper js-generate-flowers--header">
-      </div>
+    <div class="about__flower-wrapper js-generate-flowers--header">
+    </div>
     <!-- </div> -->
   </header>
 
@@ -63,10 +63,11 @@
           <!-- <h3 class="sub-heading">Introduction</h3> -->
           <div class="content-container about__intro line-height">
             <div class="about__photo-container">
-              <img class="personal-photo" src="img/portfolio-photo.jpg" alt="personal photo">
+              <img class="personal-photo" src="img/portfolio-photo-opt.jpg" alt="personal photo">
             </div>
             <p class="intro-content">
-              Hello. My name is Emily Scott and I am a software developer. I have two bachelor degrees and a passion for
+              Hello. My name is Emily Scott and I am a software developer. I have two bachelor's degrees and a passion
+              for
               programming.
               Programming engages my mind in a variety of ways as I create, problem-solve, and continually learn.
               I challenge my mind to grow and approach problems in new ways, by staying curious and informed.
@@ -214,7 +215,11 @@
               <li>HTML</li>
               <li>CSS</li>
               <li>JS</li>
+              <li>React</li>
               <li>Java</li>
+              <li>GitHub</li>
+              <li>Flexbox</li>
+              <li>ES6</li>
             </ul>
           </div>
         </div>
@@ -251,7 +256,7 @@
       <h2 class="heading projects__heading">Projects</h2>
       <div class="main-wrapper--dark-blue container">
         <div class="content-container">
-          <form class="project__select">
+          <!-- <form class="project__select">
             <label for="technology-select">Created with:</label>
             <select name="technology" id="technology-select">
               <option>Native JavaScript</option>
@@ -259,31 +264,52 @@
               <option>Mobile First Design</option>
               <option>React</option>
             </select>
-          </form>
+          </form> -->
           <!-- <p>Select technologies used - Vanilla Dev, Bootstrap, React</p> -->
           <h3 class="project-title">Personal Portfolio</h3>
           <div class="projects__project-wrapper native-js mobile-first">
-            <img src="img/portfolio-thumbnail.png" class="project__thumbnail portfolio-thumbnail">
+            <img src="img/portfolio-thumbnail.jpg" class="project__thumbnail portfolio-thumbnail">
             <div class="project-content">
-              <p>The goal of this project was to provide information about myself and my portfolio work. This website
-                was created with native HTML, CSS, and JavaScript. Click the icon below to view the GitHub repo for this
-                project.</p>
+              <h4>Goals:</h4>
+              <p>Develop a portfolio to introduce myself professionally and display my work.</p>
+              <h4>Created with:</h4>
+              <p>Native HTML, CSS, and JavaScript. Additional skills: Flexbox, BEM, GitHub, Mobile First Responsive Design.</p>
               <a href="https://github.com/escott2/portfolio.git" target="_blank">
-                <i class="fab fa-github fa-3x"></i>
+                <i class="github-icon fab fa-github fa-3x"></i>
               </a>
             </div>
           </div>
           <h3 class="project-title">The Batch Bakery</h3>
           <div class="projects__project-wrapper">
             <a href="https://escott2.github.io/TheBatchBakery/" target="_blank">
-              <img src="img/batch-thumbnail.png" class="project__thumbnail">
+              <img src="img/batch-thumbnail.jpg" class="project__thumbnail">
             </a>
             <div class="project-content">
-              <p>The goal of this project was to create a website for a fictional bakery, looking to create an online
-                presence and sell product online. This website was created with native HTML, JavaScript, and Bootstrap.
-                Click the icon below to view the GitHub repo for this project.</p>
+              <h4>Goals:</h4>
+              <p>Build a website for a fictional bakery, looking to create an online
+                presence and sell product online.</p>
+              <h4>Created with:</h4>
+              <p>Native HTML, CSS, JavaScript, and Bootstrap. Additional skills: Flexbox, GitHub, Mobile First Responsive Design.
+              </p>
               <a href="https://github.com/escott2/TheBatchBakery.git" target="_blank">
-                <i class="fab fa-github fa-3x"></i>
+                <i class="github-icon fab fa-github fa-3x"></i>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">Garden Hangman</h3>
+          <div class="projects__project-wrapper">
+            <a href="https://escott2.github.io/GardenHangman/" target="_blank">
+              <img src="img/garden-thumbnail.jpg" class="project__thumbnail">
+            </a>
+            <div class="project-content">
+              <h4>Goals:</h4>
+              <p>Create a game with an interactive UI, manipulating data and changing the UI with user
+                interaction.</p>
+              <h4>Created with:</h4>
+              <p>Native HTML, JavaScript, and Bootstrap. Additional skills: Flexbox, GitHub, Mobile First Responsive Design.</p>
+              <a href="https://github.com/escott2/TheBatchBakery.git" target="_blank">
+                <i class="github-icon fab fa-github fa-3x"></i>
               </a>
 
             </div>
@@ -304,9 +330,6 @@
         <div class="projects__project-wrapper">
           <h3>Project #6</h3>
         </div> -->
-
-
-
         </div>
       </div>
     </section>
@@ -318,25 +341,16 @@
       <h2 class="heading contact__heading">Contact</h2>
       <div class="main-wrapper--light-blue container">
         <div class="content-container">
-          <h3>Contact Information</h3>
-          <p>Name: Emily Scott</p>
-          <p>Email: escott2@css.edu</p>
-
-          <h3>Connect on LinkedIn</h3>
-
-          <h3>Email Me</h3>
-          <!-- <form action="
-        mailto: etriplett14@gmail.com" method="post" enctype="text/plain">
-          <label for="fname">First Name:</label><br>
-          <input type="text" id="fname" name="fname"><br>
-          <label for="lname">Last Name:</label><br>
-          <input type="text" id="lname" name="lname"><br>
-          <label>Email:</label><br>
-          <input type="email" name="email"><br>
-          <label>Message:</label><br>
-          <textarea name="message" rows="8" cols="20"></textarea><br>
-          <input type="submit" name="">
-        </form> -->
+          <h3>Email:</h3>
+          <p class="contact__link">escott2@css.edu</p>
+          <h3>LinkedIn:</h3>
+          <a href="https://www.linkedin.com/in/emily-e-scott/">
+            <p class="contact__link">https://www.linkedin.com/in/emily-e-scott/</p>
+          </a>
+          <h3>GitHub:</h3>
+          <a href="https://github.com/escott2">
+            <p class="contact__link">https://github.com/escott2</p>
+          </a>
         </div>
       </div>
     </section>
@@ -345,9 +359,6 @@
     </div>
 
     <button class="scroll-to-top-btn js-scroll-to-top">
-      <!-- <i class="material-icons">
-        arrow_upward
-      </i> -->
       <img src="img/up-arrow.svg" alt="arrow pointing up">
     </button>
 
@@ -374,6 +385,9 @@
         </li>
       </ul>
 
+      <div class="footer__logo-wrapper">
+        <img class="footer__logo" src="img/logo.svg" alt="logo">
+      </div>
     </div>
 
   </footer>

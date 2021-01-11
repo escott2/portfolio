@@ -231,25 +231,38 @@ main {
   text-align: center;
   width: 90%;
   margin: 0.5em auto 0;
-
-  /* margin: 0 auto; */
 }
 
 .margin-left {
   margin-left: 0.5em;
 }
 
-/* ------------- 3.3.1 About ---- */
-.about__flower-wrapper {
+.flower-wrapper {
+  display: flex;
+  align-items: center;
   margin: 1em auto;
   text-align: center;
-  /* width: 300px; */
   width: 99vw;
   max-width: 1200px;
   height: 40px;
   overflow: hidden;
-  /* position: relative; */
 }
+
+.divider {
+  justify-content: center;
+}
+
+/* ------------- 3.3.1 About ---- */
+/* .about__flower-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 1em auto;
+  text-align: center;
+  width: 99vw;
+  max-width: 1200px;
+  height: 40px;
+  overflow: hidden;
+} */
 
 .vertical-wrapper {
   width: 99vw;
@@ -537,6 +550,10 @@ main {
   background-color: white;
 }
 
+.projects__project-wrapper a {
+  text-align: center;
+}
+
 .projects {
   background-color: white;
 }
@@ -546,8 +563,18 @@ main {
   color: white;
 }
 
+.projects h4 {
+  background-color: #E7EAEB;
+  padding: 0.25em;
+  text-align: center;
+}
+
+.project-content {
+  padding: 1em;
+}
+
 .project__thumbnail {
-  width: 300px;
+  width: 80%;
   padding: 0.5em;
   margin: 1em 0;
   border: 0.5em solid rgb(231, 234, 235);
@@ -556,7 +583,7 @@ main {
 
 .github-icon {
   font-size: 35px;
-  color: #2D565B;
+  color: #153337;
 }
 
 /* .portfolio-thumbnail::after {
@@ -583,7 +610,7 @@ main {
 .contact__link {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* ---- 3.4 Footer ---- */
@@ -656,6 +683,16 @@ main {
   display: inline-block;
 }
 
+.flower-svg {
+  width: 30px;
+  height: 30px;
+}
+
+.leaf-svg {
+  width: 15px;
+  height: 35px;
+}
+
 /* ================================= 
   || 4. Components
 ==================================== */
@@ -726,11 +763,11 @@ main {
     margin: 0;
   }
 
-  .flower-wrapper {
+  /* .flower-wrapper {
     justify-content: flex-end;
     width: 50%;
     margin-bottom: 0;
-  }
+  } */
 
   nav {
     border: none;
@@ -806,25 +843,20 @@ main {
     left: -13px;
   }
 
-  /* .project__thumbnail:hover {
+  .project__thumbnail:hover {
     transition: border-color 0.5s, transform 0.5s;
   }
 
   .project__thumbnail:hover {
-    transform: scale(1.2);
+    transform: scale(1.02);
     border-color: #153337;
-  } */
+  }
 
   .footer__content {
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
     justify-content: space-between;
   }
-
-  /* .footer__author-info {
-    margin: 0;
-  } */
 
   .footer__logo-wrapper {
     margin: 0;
@@ -864,7 +896,7 @@ main {
     padding: 2em;
   }
 
-  .projects__project-wrapper {
+  /* .projects__project-wrapper {
     flex-direction: row;
     justify-content: space-evenly;
   }
@@ -876,7 +908,7 @@ main {
   .project-content {
     margin-top: 1em;
     width: 350px;
-  }
+  } */
 
 }
 
@@ -896,7 +928,17 @@ main {
     height: 302px;
   }
 
-  .project__thumbnail {
+    /* .projects__project-wrapper {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .project-content {
+    margin-top: 1em;
     width: 350px;
   }
+
+  .project__thumbnail {
+    width: 350px;
+  } */
 }

@@ -70,17 +70,48 @@ navItems.forEach(item => item.addEventListener("click", () => {
 // FUNCTIONS **********************************
 
 //Generate flower and leaf embelishment -- edit to make more secure (eliminate innerHTML or sanitize)
+//CONVERTING generateFlowers to DOM Node Creation
 function generateFlowers(number, location) {
-    let html = "";
+    // const div = document.createElement("div");
+    const darkFlower = document.createElement("img");
+    const lightFlower = document.createElement("img");
+    const leaf = document.createElement("img");
+
+    darkFlower.src = "img/darkFlower.svg";
+    lightFlower.src = "img/lightFlower.svg";
+    leaf.src = "img/leaf2.svg";
+
+    darkFlower.className = "flower-svg";
+    lightFlower.className = "flower-svg";
+    leaf.className = "leaf-svg";
+
+    // const cloneDarkRedFlower = darkRedFlower.cloneNode(true);
 
     for (let i = 0; i < number; i++) {
-        uniqueFlowerSVG = flowerSVG.replaceAll("5C322D", "442522");
-        html += uniqueFlowerSVG;
+        const cloneDarkFlower = darkFlower.cloneNode(true);
+        location.appendChild(cloneDarkFlower);
         for (let y = 0; y < 1; y++) {
-            uniqueLeafSVG = leafSVG.replaceAll("153337", "153337")
-            html += uniqueLeafSVG;
-            html += flowerSVG;
+            const cloneLeaf = leaf.cloneNode(true);
+            const cloneLightFlower = lightFlower.cloneNode(true);
+            location.appendChild(cloneLeaf);
+            location.appendChild(cloneLightFlower);
         }
-    }
-    location.innerHTML = html;
 }
+
+}
+
+
+// function generateFlowers(number, location) {
+//     let html = "";
+
+//     for (let i = 0; i < number; i++) {
+//         uniqueFlowerSVG = flowerSVG.replaceAll("5C322D", "442522");
+//         html += uniqueFlowerSVG;
+//         for (let y = 0; y < 1; y++) {
+//             uniqueLeafSVG = leafSVG.replaceAll("153337", "153337")
+//             html += uniqueLeafSVG;
+//             html += flowerSVG;
+//         }
+//     }
+//     location.innerHTML = html;
+// }

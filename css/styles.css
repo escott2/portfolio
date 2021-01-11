@@ -71,6 +71,14 @@ a:hover {
   display: flex;
 }
 
+.break-long-words {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word;
+  hyphens: auto;
+}
+
 /* ================================= 
   || 2. Typography
 ==================================== */
@@ -119,7 +127,6 @@ h4 {
   align-items: center;
   max-width: 1200px;
   margin: 1em auto;
-  /* margin-top: 1em; */
 }
 
 .title-wrapper__heading {
@@ -137,8 +144,6 @@ h4 {
 /* ---- 3.2 Navigation ---- */
 
 nav {
-  /* background-color:rgb(231,234,235); */
-  /* border: 0.2em solid #153337; */
   height: 50px;
 }
 
@@ -160,7 +165,6 @@ nav {
 }
 
 .nav {
-  /* display: flex; */
   flex-direction: column;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -168,7 +172,6 @@ nav {
   width: 100%;
   padding: 0;
   list-style: none;
-  /* display: none; */
 }
 
 .nav__item {
@@ -180,8 +183,6 @@ nav {
   border-left: 1em solid #2D565B;
 }
 
-
-
 .nav a {
   color: inherit;
   padding: 0.75em 0;
@@ -189,8 +190,6 @@ nav {
   text-align: center;
 }
 
-/* Fix UI issue: Problem, background color changes when hovering over an unclickable space within nav-item.
-    Fix with JS - when hovering over .nav a, turn nav-item background darker color.  */
 .nav__item:hover {
   background-color: #2D565B;
   color: white;
@@ -246,6 +245,9 @@ main {
   max-width: 1200px;
   height: 40px;
   overflow: hidden;
+  opacity: 0;
+  transform: rotate(2deg);
+  transition: opacity 4s, transform 2s;
 }
 
 .divider {
@@ -253,39 +255,6 @@ main {
 }
 
 /* ------------- 3.3.1 About ---- */
-/* .about__flower-wrapper {
-  display: flex;
-  align-items: center;
-  margin: 1em auto;
-  text-align: center;
-  width: 99vw;
-  max-width: 1200px;
-  height: 40px;
-  overflow: hidden;
-} */
-
-.vertical-wrapper {
-  width: 99vw;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-}
-
-.vertical-flower-wrapper {
-  /* height: 220px; */
-  height: 75px;
-  width: 40px;
-  /* background-color: red; */
-  z-index: 1;
-  position: absolute;
-  top: 40px;
-  /* top: 0; */
-  overflow: hidden;
-  left: -6px;
-}
-
-
 
 .main-wrapper--dark-blue {
   border-left: 0.2em solid #153337;
@@ -322,7 +291,7 @@ main {
   align-items: center;
 }
 
-.personal-photo {
+.self-photo {
   width: 200px;
   height: auto;
 }
@@ -330,7 +299,6 @@ main {
 .intro-content {
   width: 100%;
   margin: 0;
-  /* text-align: justify; */
 }
 
 
@@ -343,17 +311,17 @@ main {
   color: black;
 }
 
-.about__text--accent {
+/* .about__text--accent {
   color: #5c322d;
   font-weight: 600;
-}
+} */
 
-.about-wrapper__hr {
+/* .about-wrapper__hr {
   border-style: none;
   border-top: 0.2em solid black;
   width: 100px;
   margin-top: 3em;
-}
+} */
 
 .about__education-wrapper {
   position: relative;
@@ -380,10 +348,6 @@ main {
   flex-direction: column;
   align-items: center;
   margin-bottom: 7em;
-}
-
-.school__flex .flower--small {
-  margin-right: 10px;
 }
 
 .timeline-wrapper {
@@ -472,11 +436,6 @@ main {
   border-radius: 6px;
 }
 
-.skill-flower {
-  width: 12%;
-  display: inline-block;
-}
-
 .skills-wrapper {
   padding: 2em 0;
 }
@@ -509,25 +468,6 @@ main {
   background-color: white;
 }
 
-.algorithms__heading {
-  background-color: #2d565b;
-  color: white;
-  margin: 0 auto;
-}
-
-.algorithm__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 10px;
-  text-align: center;
-  padding: 1em 0;
-}
-
-.algorithm__item {
-  color: black;
-  background-color: rgb(231, 234, 235);
-}
-
 .project__select {
   margin-bottom: 1em;
 }
@@ -546,7 +486,6 @@ main {
   align-items: center;
   border-top: .5em solid #5c322d;
   margin-bottom: 2em;
-  /* height: 220px; */
   background-color: white;
 }
 
@@ -578,19 +517,12 @@ main {
   padding: 0.5em;
   margin: 1em 0;
   border: 0.5em solid rgb(231, 234, 235);
-  /* background-color: white; */
 }
 
 .github-icon {
   font-size: 35px;
   color: #153337;
 }
-
-/* .portfolio-thumbnail::after {
-  content: "Current Project";
-  color: black;
-  background-color: yellow;
-} */
 
 .contact {
   text-align: center;
@@ -610,7 +542,6 @@ main {
 .contact__link {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  overflow-wrap: break-word;
 }
 
 /* ---- 3.4 Footer ---- */
@@ -619,7 +550,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 25vh; */
   background-color: #153337;
   color: white;
   padding: 1em 0;
@@ -725,10 +655,6 @@ main {
 }
 
 
-/* .display-toggle {
-  display: none;
-} */
-
 /* ================================= 
   || 5. Media Queries
 ==================================== */
@@ -755,19 +681,9 @@ main {
     padding: 2em;
   }
 
-  /* .title-wrapper {
-    margin: 0;
-  } */
-
   .title-wrapper__heading {
     margin: 0;
   }
-
-  /* .flower-wrapper {
-    justify-content: flex-end;
-    width: 50%;
-    margin-bottom: 0;
-  } */
 
   nav {
     border: none;
@@ -784,7 +700,6 @@ main {
   }
 
   .nav {
-    /* display: flex; */
     flex-direction: row;
     justify-content: center;
     background-color: white;
@@ -843,7 +758,7 @@ main {
     left: -13px;
   }
 
-  .project__thumbnail:hover {
+  .project__thumbnail {
     transition: border-color 0.5s, transform 0.5s;
   }
 
@@ -895,21 +810,6 @@ main {
     grid-template-columns: repeat(2, 1fr);
     padding: 2em;
   }
-
-  /* .projects__project-wrapper {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .project__thumbnail {
-    width: 250px;
-  }
-
-  .project-content {
-    margin-top: 1em;
-    width: 350px;
-  } */
-
 }
 
 @media (min-width: 1025px) {
@@ -927,18 +827,4 @@ main {
     width: 450px;
     height: 302px;
   }
-
-    /* .projects__project-wrapper {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .project-content {
-    margin-top: 1em;
-    width: 350px;
-  }
-
-  .project__thumbnail {
-    width: 350px;
-  } */
 }

@@ -1,8 +1,10 @@
 <svg width="137" height="239" viewBox="0 0 137 239" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M124 103C124 177 67 231 67 231C67 231 12 178 12 103C12 28 67 8 67 8C67 8 124 29 124 103Z" fill="#153337" stroke="black" stroke-width="5"/>
-<line y1="-3" x2="221.002" y2="-3" transform="matrix(0.00452484 -0.99999 -0.99999 -0.00452484 63 230)" stroke="black" stroke-width="6"/>
-<line y1="-2.5" x2="31.6228" y2="-2.5" transform="matrix(0.822192 0.56921 0.56921 -0.822192 69 129)" stroke="black" stroke-width="5"/>
-<line x1="65.423" y1="131.055" x2="39.423" y2="149.055" stroke="black" stroke-width="5"/>
-<line x1="65.423" y1="77.0555" x2="39.423" y2="95.0555" stroke="black" stroke-width="5"/>
-<line y1="-2.5" x2="31.6228" y2="-2.5" transform="matrix(0.822192 0.56921 0.56921 -0.822192 68 75)" stroke="black" stroke-width="5"/>
+<g clip-path="url(#clip0)">
+<path d="M12 103C12 177 69 231 69 231C69 231 124 178 124 103C124 28 69 8 69 8C69 8 12 29 12 103Z" fill="#153337" stroke="black" stroke-width="14"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="137" height="239" fill="white"/>
+</clipPath>
+</defs>
 </svg>

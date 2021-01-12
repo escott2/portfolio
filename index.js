@@ -13,8 +13,13 @@ window.addEventListener('load', () => {
 
     for (let i = 0; i < flowerSection.length; i++) {
         generateFlowers(2, flowerSection[i]);
+        
+        //Animation styles for flower-wrapper dividers
+        flowerSection[i].style.opacity="1";
+        flowerSection[i].style.transform = "rotate(0deg)";
     }
 
+    //Animation styles for flower-wrapper header
     flowerHeader.style.opacity="1";
     flowerHeader.style.transform = "rotate(0deg)";
  
@@ -30,6 +35,16 @@ navToggleBtn.addEventListener("click", () => {
         nav.classList.add("nav__display-flex");
     }
 });
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+        scrollToTopBtn.classList.add("scroll-appear");
+    } else {
+        scrollToTopBtn.classList.remove("scroll-appear");
+    }
+    
+});
+
 
 scrollToTopBtn.addEventListener('click', () => {
     document.body.scrollTop = 0;

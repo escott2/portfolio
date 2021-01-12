@@ -658,6 +658,8 @@ position: relative;
   border: none;
   background-color: transparent;
   opacity: 0;
+  transition: opacity 0.5s;
+
 }
 
 .scroll-to-top-btn img {

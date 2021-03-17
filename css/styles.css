@@ -565,15 +565,37 @@ main {
   opacity: 1;
 }
 
+
+
 .overlay h4 {
   background-color: inherit;
   font-size: 35px;
   padding: 0.5em;
   color: white;
+  opacity: 0;
+  transition: opacity 0.8s 0.4s;
+  z-index: 10;
 }
 
+.overlay p {
+  opacity: 0;
+  background-color: #445C5F;
+  color: white;
+  border: solid 0.2em white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.2em;
+  transition: opacity 0.5s 0.2s, transform 0.5s 0.2s;
+}
 
+.overlay:hover h4 {
+  opacity: 1;
+}
 
+.overlay h4:hover ~ p {
+  opacity: 1;
+  transform: translateY(10px);
+}
 
 .github-icon {
   font-size: 35px;

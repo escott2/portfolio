@@ -494,9 +494,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: .5em solid #5c322d;
+  /* border-top: .5em solid #5c322d; */
   margin-bottom: 2em;
   background-color: white;
+  position: relative;
 }
 
 .projects__project-wrapper a {
@@ -535,24 +536,44 @@ main {
 }
 
 /*thumbnail overlay, in progress*/
-/* 
-.img-wrapper{
-  background-color: red;
-  width: 80%;
-position: relative;
+
+.img-wrapper {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
-.img-wrapper::before {
-  content: "Test";
-  width: 100%;
+.overlay {
+  /* background-color: rgba(255, 255, 255, 0.6); */
+  background-color: rgba(21,51,55, 0.8);
+  width: 80%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.6);
   position: absolute;
-  top: 20px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-} */
+  opacity: 0;
+  left: 50%;
+  margin-left: -40%;
+  transition: opacity 0.5s ease-out;
+}
+
+.overlay:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.overlay h4 {
+  background-color: inherit;
+  font-size: 35px;
+  padding: 0.5em;
+  color: white;
+}
+
+
+
 
 .github-icon {
   font-size: 35px;

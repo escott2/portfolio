@@ -136,7 +136,7 @@ h5 {
 }
 
 .title-wrapper__heading {
-  padding-left: .5em;
+  padding-left: 0.5em;
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 2rem;
@@ -186,7 +186,7 @@ nav {
   background-color: rgb(231, 234, 235);
   width: 72%;
   z-index: 2;
-  border-left: 1em solid #2D565B;
+  border-left: 1em solid #2d565b;
 }
 
 .nav a {
@@ -197,7 +197,7 @@ nav {
 }
 
 .nav__item:hover {
-  background-color: #2D565B;
+  background-color: #2d565b;
   color: white;
 }
 
@@ -273,7 +273,7 @@ main {
   background-color: #153337;
   color: white;
   margin-top: 1em;
-  border-top: .5em solid #442522;
+  border-top: 0.5em solid #442522;
 }
 
 .line-height {
@@ -306,7 +306,6 @@ main {
   width: 100%;
   margin: 0;
 }
-
 
 /* probably should take off font-family & color, could also abstract text from about section. More reusable. */
 
@@ -484,20 +483,21 @@ main {
 
 .project-title {
   text-align: center;
-  background-color: rgb(231, 234, 235);
   margin: 0;
   padding: 1em;
-
+  font-size: 2rem;
+  font-weight: 400;
+  /* border-top: 1rem solid #2d565b; */
 }
 
 .projects__project-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border-top: .5em solid #5c322d; */
   margin-bottom: 2em;
   background-color: white;
   position: relative;
+  /* border: 1rem solid #2d565b; */
 }
 
 .projects__project-wrapper a {
@@ -514,13 +514,20 @@ main {
 }
 
 .projects h4 {
-  background-color: #E7EAEB;
+  background-color: #e7eaeb;
   padding: 0.25em;
   text-align: center;
 }
 
 .project-content {
+  width: 95%;
   padding: 1em;
+}
+
+.project-content__text {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
 }
 
 .project-content ul {
@@ -529,10 +536,11 @@ main {
 }
 
 .project__thumbnail {
-  width: 80%;
+  width: 95%;
   padding: 0.5em;
   margin: 1em 0;
-  border: 0.5em solid rgb(231, 234, 235);
+  /* border: 0.5em solid rgb(231, 234, 235); */
+  border: 0.5em solid white;
 }
 
 /*thumbnail overlay, in progress*/
@@ -546,8 +554,7 @@ main {
 }
 
 .overlay {
-  /* background-color: rgba(255, 255, 255, 0.6); */
-  background-color: rgba(21,51,55, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 80%;
   height: 100%;
   position: absolute;
@@ -565,21 +572,19 @@ main {
   opacity: 1;
 }
 
-
-
 .overlay h4 {
-  background-color: inherit;
+  background-color: white;
   font-size: 35px;
   padding: 0.5em;
-  color: white;
   opacity: 0;
   transition: opacity 0.8s 0.4s;
   z-index: 10;
+  align-self: center;
 }
 
 .overlay p {
   opacity: 0;
-  background-color: #445C5F;
+  background-color: #445c5f;
   color: white;
   border: solid 0.2em white;
   width: 80%;
@@ -660,7 +665,6 @@ main {
   padding: 0.5em;
 }
 
-
 .footer__logo-wrapper {
   width: 100px;
   height: 100px;
@@ -718,7 +722,6 @@ main {
   background-color: transparent;
   opacity: 0;
   transition: opacity 0.5s;
-
 }
 
 .scroll-to-top-btn img {
@@ -738,16 +741,14 @@ main {
 }
 
 .scroll-to-top-btn img:active {
-  background-color: #2D565B;
+  background-color: #2d565b;
 }
-
 
 /* ================================= 
   || 5. Media Queries
 ==================================== */
 
 @media (min-width: 600px) {
-
   h1 {
     font-size: 60px;
   }
@@ -844,14 +845,14 @@ main {
   .t-container--right::after {
     left: -13px;
   }
- 
+
   .project__thumbnail {
     transition: border-color 0.5s, transform 0.5s;
   }
 
   .project__thumbnail.external-link:hover {
-    transform: scale(1.02);
-    border-color: #153337;
+    transform: scale(1.04);
+    border-color: #2d565b;
   }
 
   /* .project__thumbnail ~ .project__thumbnail:hover {
@@ -879,12 +880,9 @@ main {
   .footer__logo-wrapper {
     margin: 0;
   }
-
 }
 
-
 @media (min-width: 796px) {
-
   .main-wrapper--dark-blue {
     border-left: 0.8em solid #153337;
     border-right: 0.8em solid #153337;
@@ -917,7 +915,6 @@ main {
 }
 
 @media (min-width: 1025px) {
-
   header {
     margin-top: 0;
   }

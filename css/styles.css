@@ -381,7 +381,7 @@ nav {
   content: "";
   position: absolute;
   width: 6px;
-  /* background-color: black; */
+  background-color: black;
   top: 0;
   bottom: 0;
   left: 31px;

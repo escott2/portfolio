@@ -12,6 +12,8 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 
 </head>
@@ -21,14 +23,15 @@
   <a id="link-top"></a>
 
   <header>
+    <div class="flower-wrapper divider js-generate-flowers--header"></div>
     <div class="title-wrapper">
       <h1 class="title-wrapper__heading">Emily Scott</h1>
       <div>
         <img class="logo js-logo" src="img/logo.svg" alt="logo">
       </div>
     </div>
-    <div class="flower-wrapper divider js-generate-flowers--header">
-    </div>
+    <!-- <div class="flower-wrapper divider js-generate-flowers--header"> -->
+    <!-- </div> -->
   </header>
 
   <nav class="container">
@@ -60,19 +63,22 @@
         <div>
           <div class="content-container about__intro line-height">
             <div class="about__photo-container">
-              <img class="self-photo" src="img/portfolio-photo.jpg" alt="photo of myself">
+              <img class="self-photo" src="img/portfolio-outdoor-coding.jpg" alt="coding outside">
             </div>
             <p class="intro-content">
-              Hello. My name is Emily Scott and I am a software developer. I have two bachelor's degrees and a passion
-              for
-              programming.
-              Programming engages my mind in a variety of ways as I create, problem-solve, and continually learn.
-              I challenge my mind to grow and approach problems in new ways, by staying curious and informed.
+              <span class="intro-content--emphasized">Hello there!</span> My name is Emily Scott, and I am a software developer. I have <a class="intro-content--emphasized" href="#link-about__education">two degrees</a>, boundless curiosity, and a love of learning. I started to code in 2018 and was immediately enthralled. As a software developer I enjoy providing the logical scaffolding for ideas to become something tangible. Time passes effortlessly as I immerse myself in the process: planning, creating, problem-solving, refactoring, and maintaining. With a recent CIS degree, intense self-study, and a lot of practice I am open to new and exciting opportunities. Contact me if you are interested in creating something together!
+                    
+<!--               
+              I am drawn to the way programming engages my mind in a variety of ways as I plan, create, problem-solve, and continually learn. It provided logical scaffolding to my creativity.
+
+
+
+              I challenge my mind to grow and approach problems creatively, by staying curious and informed. -->
             </p>
           </div>
         </div>
 
-        <div class="about__education-wrapper">
+        <div  id="link-about__education" class="about__education-wrapper">
           <h3 class="sub-heading">Education</h3>
 
           <div class="school__flex">
@@ -226,32 +232,12 @@
     <div class="flower-wrapper divider js-generate-flowers--section">
     </div>
 
-    <!-- <section id="link-algorithms" class="algorithms">
-      <h2 class="heading algorithms__heading">Algorithms</h2>
-      <div class="main-wrapper--light-blue container">
-        <div class="content-container algorithm__grid">
-          <a href="https://codepen.io/escott2/pen/NWNEYjJ" target="_blank" class="algorithm__item">
-            <h3>FizzBuzz</h3>
-          </a>
-          <a href="https://codepen.io/escott2/pen/YzqdNje" target="_blank" class="algorithm__item">
-            <h3>Reversing a String</h3>
-          </a>
-          <a href="https://codepen.io/escott2/pen/qBZLrmY" target="_blank" class="algorithm__item">
-            <h3>Palindrome</h3>
-          </a>
-          <a href="https://codepen.io/escott2/pen/JjXxLMG" target="_blank" class="algorithm__item">
-            <h3>Fibonacci Sequence</h3>
-          </a>
-        </div>
-      </div>
-    </section> -->
-
     <!-- <div class="about__flower-wrapper js-generate-flowers--section">
     </div> -->
 
     <section id="link-projects" class="projects">
       <h2 class="heading projects__heading">Projects</h2>
-      <div class="container">
+      <div class="container main-wrapper--dark-blue">
         <div>
           <!-- <form class="project__select">
             <label for="technology-select">Created with:</label>

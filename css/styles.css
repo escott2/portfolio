@@ -64,6 +64,14 @@ a:hover {
   text-decoration: underline;
 }
 
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
 .nav__display-none {
   display: none;
 }
@@ -133,7 +141,7 @@ h5 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 1em auto;
 }
 
@@ -248,7 +256,7 @@ nav {
   margin: 1em auto;
   text-align: center;
   width: 95vw;
-  max-width: 1200px;
+  max-width: 1500px;
   height: 40px;
   overflow: hidden;
   opacity: 0;
@@ -491,7 +499,7 @@ nav {
 .project-title {
   text-align: center;
   margin: 0;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -516,10 +524,31 @@ nav {
   color: white;
 }
 
-.projects h4 {
+.project-content__header {
   background-color: #e7eaeb;
   padding: 0.25em;
   text-align: center;
+}
+
+.project__more-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.project__more-info__btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.project__more-info__btn i {
+  transform: translateY(-4px);
 }
 
 .project-content {
@@ -550,18 +579,18 @@ nav {
 }
 
 .project-header {
-  background-color: #442522;
-  color: white;
+  /* background-color: #442522;
+  color: white; */
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
 }
 
 .github-icon {
   font-size: 35px;
-  color: white;
+  color: black;
   padding: 0.4rem;
 }
 

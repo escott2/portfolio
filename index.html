@@ -30,8 +30,6 @@
         <img class="logo js-logo" src="img/logo.svg" alt="logo">
       </div>
     </div>
-    <!-- <div class="flower-wrapper divider js-generate-flowers--header"> -->
-    <!-- </div> -->
   </header>
 
   <nav class="container">
@@ -59,21 +57,17 @@
     <section id="link-about" class="about">
       <h2 class="heading container about__heading">About</h2>
       <div class="main-wrapper--dark-blue container">
-
+        <!-- <div class="greeting-animation">Hello There!</div> -->
         <div>
           <div class="content-container about__intro line-height">
             <div class="about__photo-container">
+              <div class="greeting-animation">
+                <p>Hello There!</p>
+              </div>
               <img class="self-photo" src="img/portfolio-outdoor-coding.jpg" alt="coding outside">
             </div>
             <p class="intro-content">
               <span class="intro-content--emphasized">Hello there!</span> My name is Emily Scott, and I am a software developer. I have <a class="intro-content--emphasized" href="#link-about__education">two degrees</a>, boundless curiosity, and a love of learning. I started to code in 2018 and was immediately enthralled. As a software developer I enjoy providing the logical scaffolding for ideas to become something tangible. Time passes effortlessly as I immerse myself in the process: planning, creating, problem-solving, refactoring, and maintaining. With a recent CIS degree, intense self-study, and a lot of <a class="intro-content--emphasized" href="#link-projects">practice</a> I am open to new and exciting opportunities. <a class="intro-content--emphasized" href="#link-contact">Contact me</a> if you are interested in creating something together!
-                    
-<!--               
-              I am drawn to the way programming engages my mind in a variety of ways as I plan, create, problem-solve, and continually learn. It provided logical scaffolding to my creativity.
-
-
-
-              I challenge my mind to grow and approach problems creatively, by staying curious and informed. -->
             </p>
           </div>
         </div>
@@ -262,16 +256,15 @@
                 <img src="img/outdoorcast-thumbnail-1.JPG" class="project__thumbnail external-link">
               </a>
             </div>
-            <!-- <div class="project-header">
-              <h3 class="project-title">The Great Outdoorcast</h3>
-              <a href="https://github.com/escott2/weather.git" target="_blank">
-                <i class="github-icon fab fa-github fa-3x"></i>
-              </a>
-            </div> -->
-            <div class="project-content">
-              <h4>Goals</h4>
+            <div class="project__more-info">
+              <h4>Learn More</h4>
+              <button class="js-project__more-info__btn project__more-info__btn"><i class="fas fa-sort-down"></i>
+              </button>
+            </div>
+            <div class="project-content display-none">
+              <h4 class="project-content__header">Goals</h4>
               <p class="project-content__text">The goal of this website is to display weather and sunlight data pulled from third-party APIs.</p>
-              <h4>Created with</h4>
+              <h4 class="project-content__header">Created with</h4>
               <div class="project-tools">
                 <div class="tools">
                   <h5>Code</h5>
@@ -306,10 +299,15 @@
                 <img src="img/batch-thumbnail-opt.JPG" class="project__thumbnail external-link">
               </a>
             </div>
-            <div class="project-content">
-              <h4>Goals</h4>
+            <div class="project__more-info">
+              <h4>Learn More</h4>
+              <button class="js-project__more-info__btn project__more-info__btn"><i class="fas fa-sort-down"></i>
+              </button>
+            </div>
+            <div class="project-content display-none">
+              <h4 class="project-content__header">Goals</h4>
               <p class="project-content__text">The goal of this project was to build a website for a (fictional) bakery. This website creates an online presence, allowing customers to learn more about the business. Additionally, it provides a way to order product online for pickup or delivery.</p>
-              <h4>Created with</h4>
+              <h4 class="project-content__header">Created with</h4>
               <div class="project-tools">
                 <div class="tools">
                   <h5>Code</h5>
@@ -347,11 +345,16 @@
             <a href="https://github.com/escott2/GardenHangman.git" target="_blank">
               <i class="github-icon fab fa-github fa-3x"></i>
             </a>
-            <div class="project-content">
-              <h4>Goals</h4>
+            <div class="project__more-info">
+              <h4>Learn More</h4>
+              <button class="js-project__more-info__btn project__more-info__btn"><i class="fas fa-sort-down"></i>
+              </button>
+            </div>
+            <div class="project-content display-none">
+              <h4 class="project-content__header">Goals</h4>
               <p class="project-content__text">The goal of this website was to deliver a game with an interactive UI, manipulating data and changing the UI with user
                 interaction. Additionally, this game consumes data from a third party API to fetch words and definitions.</p>
-              <h4>Created with</h4>
+              <h4 class="project-content__header">Created with</h4>
               <div class="project-tools">
                 <div class="tools">
                   <h5>Code</h5>

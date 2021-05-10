@@ -64,6 +64,14 @@ a:hover {
   text-decoration: underline;
 }
 
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
 .nav__display-none {
   display: none;
 }
@@ -133,7 +141,7 @@ h5 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 1em auto;
 }
 
@@ -248,7 +256,7 @@ nav {
   margin: 1em auto;
   text-align: center;
   width: 95vw;
-  max-width: 1200px;
+  max-width: 1500px;
   height: 40px;
   overflow: hidden;
   opacity: 0;
@@ -266,6 +274,26 @@ nav {
   border-left: 0.2em solid #153337;
   border-right: 0.2em solid #153337;
   border-bottom: 0.2em solid #153337;
+}
+
+.about {
+  position: relative;
+}
+
+.greeting-animation {
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  height: 100%;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .about__heading {
@@ -287,14 +315,13 @@ nav {
 }
 
 .about__photo-container {
-  /* width: 225px;
-  height: 260px; */
   padding: 0.5rem;
   background-color: rgb(231, 234, 235);
   margin: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .self-photo {
@@ -318,22 +345,8 @@ nav {
 .about__text--large {
   font-weight: 400;
   font-size: 20px;
-  /* font-family: "Open Sans", sans-serif; */
   font-family: "Lato", sans-serif;
-  /* color: black; */
 }
-
-/* .about__text--accent {
-  color: #5c322d;
-  font-weight: 600;
-} */
-
-/* .about-wrapper__hr {
-  border-style: none;
-  border-top: 0.2em solid black;
-  width: 100px;
-  margin-top: 3em;
-} */
 
 .about__education-wrapper {
   position: relative;
@@ -491,7 +504,7 @@ nav {
 .project-title {
   text-align: center;
   margin: 0;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -516,10 +529,31 @@ nav {
   color: white;
 }
 
-.projects h4 {
+.project-content__header {
   background-color: #e7eaeb;
   padding: 0.25em;
   text-align: center;
+}
+
+.project__more-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.project__more-info__btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.project__more-info__btn i {
+  transform: translateY(-4px);
 }
 
 .project-content {
@@ -550,18 +584,18 @@ nav {
 }
 
 .project-header {
-  background-color: #442522;
-  color: white;
+  /* background-color: #442522;
+  color: white; */
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
 }
 
 .github-icon {
   font-size: 35px;
-  color: white;
+  color: black;
   padding: 0.4rem;
 }
 

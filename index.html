@@ -61,13 +61,13 @@
         <div>
           <div class="content-container about__intro line-height">
             <div class="about__photo-container">
-              <div class="greeting-animation">
+              <div class="greeting-animation js-greeting-animation">
                 <p>Hello There!</p>
               </div>
               <img class="self-photo" src="img/portfolio-outdoor-coding.jpg" alt="coding outside">
             </div>
             <p class="intro-content">
-              <span class="intro-content--emphasized">Hello there!</span> My name is Emily Scott, and I am a software developer. I have <a class="intro-content--emphasized" href="#link-about__education">two degrees</a>, boundless curiosity, and a love of learning. I started to code in 2018 and was immediately enthralled. As a software developer I enjoy providing the logical scaffolding for ideas to become something tangible. Time passes effortlessly as I immerse myself in the process: planning, creating, problem-solving, refactoring, and maintaining. With a recent CIS degree, intense self-study, and a lot of <a class="intro-content--emphasized" href="#link-projects">practice</a> I am open to new and exciting opportunities. <a class="intro-content--emphasized" href="#link-contact">Contact me</a> if you are interested in creating something together!
+              <span><button class="intro-content--emphasized  greeting-btn js-greeting-btn">Hello there!</button></span> My name is Emily Scott, and I am a software developer. I have <a class="intro-content--emphasized" href="#link-about__education">two degrees</a>, boundless curiosity, and a love of learning. As a software developer I enjoy providing the logical scaffolding for ideas to become something tangible. Time passes effortlessly as I immerse myself in the process: planning, creating, problem-solving, refactoring, and maintaining. With a recent CIS degree, intense self-study, and a lot of <a class="intro-content--emphasized" href="#link-projects">practice</a> I am open to new and exciting opportunities. <a class="intro-content--emphasized" href="#link-contact">Contact me</a> if you are interested in creating something together!
             </p>
           </div>
         </div>
@@ -248,7 +248,7 @@
             <div class="project-header">
               <h3 class="project-title">The Great Outdoorcast</h3>
               <a href="https://github.com/escott2/weather.git" target="_blank">
-                <i class="github-icon fab fa-github fa-3x"></i>
+                <i class="icon fab fa-github fa-3x"></i>
               </a>
             </div>
             <div class="img-wrapper">
@@ -291,7 +291,7 @@
             <div class="project-header">
               <h3 class="project-title">The Batch Bakery</h3>
               <a href="https://github.com/escott2/TheBatchBakery.git" target="_blank">
-                <i class="github-icon fab fa-github fa-3x"></i>
+                <i class="icon fab fa-github fa-3x"></i>
               </a>
             </div>
             <div class="img-wrapper">
@@ -334,7 +334,7 @@
             <div class="project-header">
               <h3 class="project-title">Garden Hangman</h3>
               <a href="https://github.com/escott2/TheBatchBakery.git" target="_blank">
-                <i class="github-icon fab fa-github fa-3x"></i>
+                <i class="icon fab fa-github fa-3x"></i>
               </a>
             </div>
             <div class="img-wrapper">
@@ -343,7 +343,7 @@
               </a>
             </div>
             <a href="https://github.com/escott2/GardenHangman.git" target="_blank">
-              <i class="github-icon fab fa-github fa-3x"></i>
+              <i class="icon fab fa-github fa-3x"></i>
             </a>
             <div class="project__more-info">
               <h4>Learn More</h4>
@@ -409,17 +409,29 @@
     <section id="link-contact" class="contact">
       <h2 class="heading contact__heading">Contact</h2>
       <div class="main-wrapper--light-blue container">
-        <div class="content-container">
-          <h3>Email:</h3>
-          <p class="contact__link">escott2@css.edu</p>
-          <h3>LinkedIn:</h3>
-          <a href="https://www.linkedin.com/in/emily-e-scott/">
-            <p class="contact__link break-long-words">https://www.linkedin.com/in/emily-e-scott/</p>
-          </a>
-          <h3>GitHub:</h3>
-          <a href="https://github.com/escott2">
-            <p class="contact__link">https://github.com/escott2</p>
-          </a>
+        <div class="contact__container content-container">
+          <div class="contact__group">
+            <a href="https://www.linkedin.com/in/emily-e-scott/" target="_blank" rel="noopener noreferrer">
+              <i class="icon fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/emily-e-scott/" target="_blank" rel="noopener noreferrer">
+              <h3>LinkedIn</h3>
+            </a>
+          </div>
+          <div class="contact__group">
+            <a href="https://github.com/escott2" target="_blank" rel="noopener noreferrer">
+              <i class="icon fab fa-github fa-3x"></i>
+            </a>
+            <a href="https://github.com/escott2" target="_blank" rel="noopener noreferrer">
+              <h3>GitHub</h3>
+            </a>
+          </div>
+          <div class="contact__group">
+            <i class="icon fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p class="contact__link"> &#8212;
+              escott2@css.edu</p>
+          </div>
         </div>
       </div>
     </section>

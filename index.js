@@ -9,6 +9,7 @@ const scrollToTopBtn = document.querySelector(".js-scroll-to-top");
 const toggleProjectInfoBtn = document.querySelectorAll(
   ".js-project__more-info__btn"
 );
+const greetingAnimationDiv = document.querySelector(".js-greeting-animation");
 
 // EVENT LISTENERS ****************************
 
@@ -62,6 +63,23 @@ navItems.forEach((item) =>
     }
   })
 );
+
+const greetingAnimationBtn = document.querySelector(".js-greeting-btn");
+let zeroOpacityTimeout;
+function opacityTimeout() {
+  zeroOpacityTimeout = setTimeout(() => {
+    greetingAnimationDiv.style.opacity = "0";
+  }, 2000);
+}
+function stopOpacityTimeout() {
+  clearTimeout(zeroOpacityTimeout);
+}
+
+greetingAnimationBtn.addEventListener("click", () => {
+  stopOpacityTimeout();
+  greetingAnimationDiv.style.opacity = "1";
+  opacityTimeout();
+});
 
 toggleProjectInfoBtn.forEach((button) =>
   button.addEventListener("click", () => {

@@ -245,7 +245,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border-top: 1rem solid #442522; */
+  overflow: hidden;
 }
 
 .vine {
@@ -271,44 +271,43 @@ nav {
   transform: translateX(-19px);
 }
 
-.logo-div {
-  position: relative;
-  width: 80%;
-  height: 100%;
+.landing__content {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing__logo {
-  position: absolute;
-  top: 20%;
-  left: 40%;
-}
-/* 
-.vine:hover .vine__leaf--down {
-  opacity: 1;
-  transform: scale(10) rotate(-45deg) translateX(10px);
+  flex-basis: 100%;
+  width: 200px;
+  height: auto;
 }
 
-.vine:hover .vine__leaf--up {
-  opacity: 1;
-  transform: scale(10) rotate(-65deg) translate(10px, 5px);
+.landing__text {
+  margin: 0;
 }
 
-.vine__leaf--up {
-  width: 10px;
-  height: auto;
-  padding: 4rem 0;
-  opacity: 0;
-  transform: rotate(-65deg) translate(10px, 5px);
-  transition: opacity 0.5s ease, transform 2s ease;
-}
-.vine__leaf--down {
-  width: 10px;
-  height: auto;
-  padding: 4rem 0;
-  opacity: 0;
-  transform: rotate(-45deg) translateX(5px);
-  transition: opacity 0.5s ease, transform 2.2s ease;
+/* .landing__text .heading__span {
+  font-size: 3rem;
 } */
+
+.landing-screen__heading {
+  /* width: 50%; */
+  flex-basis: 100%;
+}
+
+.landing-screen__subheading {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.landing-screen__subheading .heading__span {
+  font-size: 2rem;
+  font-weight: 300;
+}
 
 /* ---- 3.3 Main ---- */
 
@@ -935,9 +934,9 @@ footer {
     /* border-left: 1rem solid #2d565b; */
   }
 
-  .landing-screen__heading {
+  /* .landing-screen__heading {
     font-size: 4rem;
-  }
+  } */
 
   .about-wrapper__heading {
     padding-bottom: 0.75em;

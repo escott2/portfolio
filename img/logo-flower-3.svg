@@ -1,0 +1,25 @@
+<svg width="269" height="260" viewBox="0 0 269 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="60" cy="136" r="53" fill="#442522" stroke="black" stroke-width="14"/>
+<circle cx="131" cy="200" r="53" fill="#442522" stroke="black" stroke-width="14"/>
+<g clip-path="url(#clip0)">
+<circle cx="131" cy="65" r="53" stroke="black" stroke-width="14"/>
+<rect x="153" y="42" width="52" height="69" fill="white"/>
+<rect width="75" height="19.2084" transform="matrix(-0.759744 0.650222 0.650222 0.759744 195.784 15)" fill="white"/>
+<circle cx="132.5" cy="135.5" r="70.5" fill="white"/>
+<circle cx="200.137" cy="141.137" r="53" transform="rotate(-9.56645 200.137 141.137)" stroke="black" stroke-width="14"/>
+<path d="M62 135.5C62 154.198 69.4277 172.13 82.649 185.351C95.8703 198.572 113.802 206 132.5 206C151.198 206 169.13 198.572 182.351 185.351C195.572 172.13 203 154.198 203 135.5L132.5 135.5H62Z" fill="white"/>
+<circle cx="131" cy="136" r="60" fill="black"/>
+<circle cx="131" cy="136" r="47" fill="white"/>
+<rect x="83" y="127" width="101" height="14" fill="black"/>
+</g>
+<path d="M177.5 141.5H190.25C189.92 146.316 189.358 149.049 187.7 154H174C176.215 148.91 176.948 146.182 177.5 141.5Z" fill="white" stroke="white"/>
+<g style="mix-blend-mode:screen">
+<path d="M188.5 141.5H201.25C200.92 146.316 200.358 149.049 198.7 154H185C187.215 148.91 187.948 146.182 188.5 141.5Z" fill="white"/>
+<path d="M188.5 141.5H201.25C200.92 146.316 200.358 149.049 198.7 154H185C187.215 148.91 187.948 146.182 188.5 141.5Z" stroke="white"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="207" height="207" fill="white" transform="matrix(-1 0 0 1 269 0)"/>
+</clipPath>
+</defs>
+</svg>

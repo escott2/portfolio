@@ -8,31 +8,50 @@
   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
   <link rel="stylesheet" href="css/normalize.css" />
   <script src="https://kit.fontawesome.com/4b3b1ff6ef.js" crossorigin="anonymous"></script>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap"
-    rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,500;0,700&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="css/styles.css" />
+
 
 </head>
 
 
 <body>
   <a id="link-top"></a>
+  <div class="landing-screen">
+    <div class="landing-screen__modal">
+      <div class="vine">
+        <img class="vine__leaf vine__leaf--down" src="img/leaf.svg" alt="leaf"/>
+        <img class="vine__leaf vine__leaf--up" src="img/leaf.svg" alt="leaf"/>
+        <img class="vine__leaf vine__leaf--down" src="img/leaf.svg" alt="leaf"/>
+
+      </div>
+      <div class="landing__content">
+        <img class="landing__logo" src="img/logo-flower-3.svg" alt="logo" />
+        <div class="heading-wrapper">
+          <h1 class="landing__text landing-screen__heading"><span class="heading__span">e</span>mily <span class="heading__span">s</span>cott</h1>
+          <h2 class="landing__text landing-screen__subheading"><span class="heading__span">s</span>oftware <span class="heading__span">e</span>ngineer</h2>
+        </div>
+
+      </div>
+      <div class="vine"></div>
+
+    </div> 
+  </div>
 
   <header>
     <div class="flower-wrapper divider js-generate-flowers--header"></div>
     <div class="title-wrapper">
-      <h1 class="title-wrapper__heading">Emily Scott</h1>
+      <h1 class="title-wrapper__heading">emily scott</h1>
       <div>
         <img class="logo js-logo" src="img/logo.svg" alt="logo">
       </div>
     </div>
   </header>
 
-  <nav class="container">
+  <nav class="container nav-container">
     <button class="nav-toggle js-nav-toggle" aria-expanded="false" aria-controls="menu"><img src="img/menu.svg"
         alt="menu-icon">
     </button>
@@ -55,8 +74,8 @@
   <main>
 
     <section id="link-about" class="about">
-      <h2 class="heading container about__heading">About</h2>
-      <div class="main-wrapper--dark-blue container">
+      <div class="main-wrapper--light-blue container">
+        <h2 class="heading container about__heading">About</h2>
         <!-- <div class="greeting-animation">Hello There!</div> -->
         <div>
           <div class="content-container about__intro line-height">
@@ -230,8 +249,8 @@
     </div> -->
 
     <section id="link-projects" class="projects">
-      <h2 class="heading projects__heading">Projects</h2>
-      <div class="container main-wrapper--dark-blue">
+      <div class="container main-wrapper--light-blue">
+        <h2 class="heading projects__heading">Projects</h2>
         <div>
           <!-- <form class="project__select">
             <label for="technology-select">Created with:</label>
@@ -248,7 +267,7 @@
             <div class="project-header">
               <h3 class="project-title">The Great Outdoorcast</h3>
               <a href="https://github.com/escott2/weather.git" target="_blank">
-                <i class="icon fab fa-github fa-3x"></i>
+                <i class="icon github-icon fab fa-github fa-3x"></i>
               </a>
             </div>
             <div class="img-wrapper">
@@ -291,7 +310,7 @@
             <div class="project-header">
               <h3 class="project-title">The Batch Bakery</h3>
               <a href="https://github.com/escott2/TheBatchBakery.git" target="_blank">
-                <i class="icon fab fa-github fa-3x"></i>
+                <i class="icon github-icon fab fa-github fa-3x"></i>
               </a>
             </div>
             <div class="img-wrapper">
@@ -334,7 +353,7 @@
             <div class="project-header">
               <h3 class="project-title">Garden Hangman</h3>
               <a href="https://github.com/escott2/TheBatchBakery.git" target="_blank">
-                <i class="icon fab fa-github fa-3x"></i>
+                <i class="icon github-icon fab fa-github fa-3x"></i>
               </a>
             </div>
             <div class="img-wrapper">
@@ -342,9 +361,6 @@
                 <img src="img/hangman-thumbnail-opt.JPG" class="project__thumbnail external-link">
               </a>
             </div>
-            <a href="https://github.com/escott2/GardenHangman.git" target="_blank">
-              <i class="icon fab fa-github fa-3x"></i>
-            </a>
             <div class="project__more-info">
               <h4>Learn More</h4>
               <button class="js-project__more-info__btn project__more-info__btn"><i class="fas fa-sort-down"></i>
@@ -407,8 +423,8 @@
     </div>
 
     <section id="link-contact" class="contact">
-      <h2 class="heading contact__heading">Contact</h2>
       <div class="main-wrapper--light-blue container">
+        <h2 class="heading contact__heading">Contact</h2>
         <div class="contact__container content-container">
           <div class="contact__group">
             <a href="https://www.linkedin.com/in/emily-e-scott/" target="_blank" rel="noopener noreferrer">

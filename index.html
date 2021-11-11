@@ -10,7 +10,7 @@
   <script src="https://kit.fontawesome.com/4b3b1ff6ef.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,500;0,700&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="css/styles.css" />
 
@@ -44,14 +44,14 @@
   <header>
     <div class="flower-wrapper divider js-generate-flowers--header"></div>
     <div class="title-wrapper">
-      <h1 class="title-wrapper__heading"><span class="heading__span">e</span>mily <span class="heading__span">s</span>cott</h1>
+      <h1 class="title-wrapper__heading">emily scott</h1>
       <div>
         <img class="logo js-logo" src="img/logo.svg" alt="logo">
       </div>
     </div>
   </header>
 
-  <nav class="container">
+  <nav class="container nav-container">
     <button class="nav-toggle js-nav-toggle" aria-expanded="false" aria-controls="menu"><img src="img/menu.svg"
         alt="menu-icon">
     </button>
@@ -74,8 +74,8 @@
   <main>
 
     <section id="link-about" class="about">
-      <h2 class="heading container about__heading">About</h2>
-      <div class="main-wrapper--dark-blue container">
+      <div class="main-wrapper--light-blue container">
+        <h2 class="heading container about__heading">About</h2>
         <!-- <div class="greeting-animation">Hello There!</div> -->
         <div>
           <div class="content-container about__intro line-height">
@@ -83,7 +83,7 @@
               <div class="greeting-animation js-greeting-animation">
                 <p>Hello There!</p>
               </div>
-              <img class="self-photo" src="img/port-photo.jpg" alt="coding outside">
+              <img class="self-photo" src="img/portfolio-photo.jpg" alt="coding outside">
             </div>
             <p class="intro-content">
               <span><button class="intro-content--emphasized  greeting-btn js-greeting-btn">Hello there!</button></span> My name is Emily Scott, and I am a software developer. I have <a class="intro-content--emphasized" href="#link-about__education">two degrees</a>, boundless curiosity, and a love of learning. As a software developer I enjoy providing the logical scaffolding for ideas to become something tangible. Time passes effortlessly as I immerse myself in the process: planning, creating, problem-solving, refactoring, and maintaining. With a recent CIS degree, intense self-study, and a lot of <a class="intro-content--emphasized" href="#link-projects">practice</a> I am open to new and exciting opportunities. <a class="intro-content--emphasized" href="#link-contact">Contact me</a> if you are interested in creating something together!
@@ -249,8 +249,8 @@
     </div> -->
 
     <section id="link-projects" class="projects">
-      <h2 class="heading projects__heading">Projects</h2>
-      <div class="container main-wrapper--dark-blue">
+      <div class="container main-wrapper--light-blue">
+        <h2 class="heading projects__heading">Projects</h2>
         <div>
           <!-- <form class="project__select">
             <label for="technology-select">Created with:</label>
@@ -267,7 +267,7 @@
             <div class="project-header">
               <h3 class="project-title">The Great Outdoorcast</h3>
               <a href="https://github.com/escott2/weather.git" target="_blank">
-                <i class="icon fab fa-github fa-3x"></i>
+                <i class="icon github-icon fab fa-github fa-3x"></i>
               </a>
             </div>
             <div class="img-wrapper">
@@ -310,7 +310,7 @@
             <div class="project-header">
               <h3 class="project-title">The Batch Bakery</h3>
               <a href="https://github.com/escott2/TheBatchBakery.git" target="_blank">
-                <i class="icon fab fa-github fa-3x"></i>
+                <i class="icon github-icon fab fa-github fa-3x"></i>
               </a>
             </div>
             <div class="img-wrapper">
@@ -353,7 +353,7 @@
             <div class="project-header">
               <h3 class="project-title">Garden Hangman</h3>
               <a href="https://github.com/escott2/TheBatchBakery.git" target="_blank">
-                <i class="icon fab fa-github fa-3x"></i>
+                <i class="icon github-icon fab fa-github fa-3x"></i>
               </a>
             </div>
             <div class="img-wrapper">
@@ -361,9 +361,6 @@
                 <img src="img/hangman-thumbnail-opt.JPG" class="project__thumbnail external-link">
               </a>
             </div>
-            <a href="https://github.com/escott2/GardenHangman.git" target="_blank">
-              <i class="icon fab fa-github fa-3x"></i>
-            </a>
             <div class="project__more-info">
               <h4>Learn More</h4>
               <button class="js-project__more-info__btn project__more-info__btn"><i class="fas fa-sort-down"></i>
@@ -426,8 +423,8 @@
     </div>
 
     <section id="link-contact" class="contact">
-      <h2 class="heading contact__heading">Contact</h2>
       <div class="main-wrapper--light-blue container">
+        <h2 class="heading contact__heading">Contact</h2>
         <div class="contact__container content-container">
           <div class="contact__group">
             <a href="https://www.linkedin.com/in/emily-e-scott/" target="_blank" rel="noopener noreferrer">

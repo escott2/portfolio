@@ -56,10 +56,6 @@ a {
   color: inherit;
 }
 
-a:visited {
-  color: #442522;
-}
-
 a:hover {
   text-decoration: underline;
 }
@@ -443,6 +439,11 @@ main {
 .intro-content--emphasized {
   font-size: 1.5rem;
   font-weight: 700;
+  color: #153337;
+}
+
+.intro-content--emphasized:hover {
+  text-decoration: underline;
 }
 
 /* probably should take off font-family & color, could also abstract text from about section. More reusable. */

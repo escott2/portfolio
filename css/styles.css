@@ -56,10 +56,6 @@ a {
   color: inherit;
 }
 
-a:visited {
-  color: #442522;
-}
-
 a:hover {
   text-decoration: underline;
 }
@@ -116,7 +112,7 @@ h2 {
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 18px;
   letter-spacing: 2px;
   font-weight: 600;
 }
@@ -337,7 +333,7 @@ main {
 
 .sub-heading {
   margin: 0;
-  background-color: #442522;
+  background-color: #153337;
   padding: 0.5em 0;
   color: white;
   text-align: center;
@@ -443,6 +439,11 @@ main {
 .intro-content--emphasized {
   font-size: 1.5rem;
   font-weight: 700;
+  color: #153337;
+}
+
+.intro-content--emphasized:hover {
+  text-decoration: underline;
 }
 
 /* probably should take off font-family & color, could also abstract text from about section. More reusable. */
@@ -583,7 +584,7 @@ main {
 }
 
 .skills-wrapper li {
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   text-align: center;
@@ -591,9 +592,10 @@ main {
   width: 110px;
   height: 110px;
   margin: 5px;
-  padding-top: 40px;
-  background-color: #153337;
+  padding-top: 45px;
+  background-color: #2d565b;
   border-radius: 200px;
+  border: 2px solid #153337;
 }
 
 .project__select {
@@ -751,11 +753,12 @@ footer {
   align-items: center;
   background-color: #153337;
   color: white;
-  padding: 1em 0;
+  padding: 1em 0 3em;
+  font-size: 1.125rem;
 }
 
 .footer__content {
-  width: 90%;
+  width: 80vw;
   max-width: 1500px;
   margin: 0 auto;
 }
@@ -771,12 +774,6 @@ footer {
   list-style: none;
 }
 
-.footer__nav a {
-  color: white;
-  font-size: 1.25rem;
-  text-decoration: underline;
-}
-
 .footer__link {
   padding: 0.5em;
 }
@@ -787,8 +784,9 @@ footer {
   padding: 1em;
   margin: 0 auto;
   margin-top: 1em;
-  /* background-color: white; */
+  background-color: white;
   border-radius: 50%;
+  border: 4px solid #2d565b;
 }
 
 .footer__logo {

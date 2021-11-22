@@ -636,25 +636,38 @@ main {
   text-align: center;
 }
 
-.project__more-info {
+.project__information {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 1rem 1rem 0.5rem;
   align-items: center;
   width: 100%;
   background-color: #153337;
   color: white;
 }
 
-.project__more-info__btn {
+.project__information__btn {
   background-color: transparent;
   border: none;
   color: white;
   font-size: 2rem;
 }
 
-.project__more-info__btn i {
-  transform: translateY(-4px);
+.project__information__btn i {
+  transform: translateY(-7px);
+}
+
+.project__learn-more {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.project__learn-more h4 {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .project-content {
@@ -992,11 +1005,7 @@ footer {
   }
 
   .project__thumbnail {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    filter: grayscale(100%);
     transition: all 0.5s ease;
-    /* transition: border-color 0.5s, transform 0.5s, filter 0.5s ease; */
   }
 
   .project__thumbnail.external-link:hover {
@@ -1006,10 +1015,10 @@ footer {
     transform: scale(1.04);
   }
 
-  /* .project__thumbnail ~ .project__thumbnail:hover {
-    transform: scale(1.02);
-    border-color: red;
-  } */
+  .project__information {
+    flex-direction: row;
+    padding: 0.25rem 1rem;
+  }
 
   .project-tools {
     display: flex;

@@ -7,7 +7,7 @@ const flowerSection = document.querySelectorAll(
 );
 const scrollToTopBtn = document.querySelector(".js-scroll-to-top");
 const toggleProjectInfoBtn = document.querySelectorAll(
-  ".js-project__more-info__btn"
+  ".js-project__information__btn"
 );
 const greetingAnimationDiv = document.querySelector(".js-greeting-animation");
 
